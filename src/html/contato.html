@@ -133,34 +133,43 @@
     <div class="modal-dialog">
       <dialog class="modal-content">
         <header class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Formulario de Contato</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </header>
-        <main class="modal-body">
+        <form id="form-contato" class="modal-body">
           <div class="mb-3">
-            <label for="exampleFormControlInput" class="form-label">Nome Completo</label>
-            <input type="text" class="form-control" id="exampleFormControlInput" placeholder="Insira seu nome completo">
+            <label for="nome-contato" class="form-label">Nome Completo</label>
+            <input type="text" class="form-control" id="nome-contato" placeholder="Insira seu nome completo">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@exemplo.com">
+            <label for="email-contato" class="form-label">Email</label>
+            <input type="email" class="form-control" id="email-contato" placeholder="email@exemplo.com">
           </div>
           <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Deixe seu comentário</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Insira aqui seu comentário"></textarea>
+            <label for="texto-contato" class="form-label">Deixe seu comentário</label>
+            <textarea class="form-control" id="texto-contato" rows="3" placeholder="Insira aqui seu comentário"></textarea>
           </div>
-        </main>
+          <div class="text-center mb-3">
+            <button type="submit" class="btn corBotao">Enviar</button>
+          </div>
+          <div class="alert alert-danger d-none">
+            Preencha o campo <span id="erro-contato"></span>!
+          </div>
+        </form>
         
         <footer class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <button type="button" class="btn botao-cor-especial">Enviar</button>
+          
         </footer>
       </dialog>
     </div>
   </div>
     
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+  <script src="../js/formulario.js"></script>
+
 </body>
 </html>
