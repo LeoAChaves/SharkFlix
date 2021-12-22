@@ -1,0 +1,13 @@
+.cabecalho {
+    z-index: initial;
+}
+
+.dados1 {
+    background-color: lightcoral;
+    padding: 2em;
+}
+
+.dados2 {
+    background-color: lightgreen;
+    padding: 2em;
+}
