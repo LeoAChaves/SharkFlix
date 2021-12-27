@@ -1,48 +1,59 @@
 .imagen{
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: 0 2px;
 }
 .imagen-spirit{
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: 0 40%;
 }
 .imagen-pirata{
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: 0 40%;
 }
 .imagen-mad{
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: 0 20%;
 }
 .imagen-sherek{
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: 0 20%;
 }
 .imagen-gt{
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: 0 2px;
 }
 .imagen-av{
-    max-height: 400px;
+    height: 400px;
     object-fit: cover;
     object-position: 0 20%;
 }
 .imagen-tb{
-    max-height: 400px;
-    
+    height: 400px;
     object-position: 0 20%;
 }
 .carousel-indicators button {
     width: 10px !important;
     height: 10px !important;
     border-radius: 50%;
-  }
+}
+.cards{
+    max-width: 18rem;
+}
+.img-cards{
+    object-fit: cover;
+    height: 200px;
+}
+.cor-botao{
+    background-color: darkgoldenrod;
+    color: black;
+
+}
 /* .texto{
     color: black;
     font-size: 30px;
