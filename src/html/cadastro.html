@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../css/styleCadastro.css">
     <title>Formulario de Cadastro</title>
 </head>
+
 <body>
     <header class="fixed-top col-12 m-auto cabecalho">
         <!-- col-11 da um espaço e o m-auto ja deixa no meio o da esquerda-->
@@ -40,102 +41,108 @@
         </nav>
     </header>
     <br><br><br>
+
     <div class="row  fs-4 ">
         <form class="dados1 d-flex justify-content-center">
             <div class="form-group col-5 lh-lg">
                 <div class="d-flex justify-content-center">
-                    <div>
-                       <p>Dados Pessoais: </p>
-                    </div>
-                <div class="form-group ">
-                    <label>Nome:</label>
-                    <input type="text" class="form-control" placeholder="Nome completo" required>
-                </div>
-                <div class="form-group ">
-                    <label>E-mail:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@yahoo.com" required>
-                    <small id="emailHelp" class="form-text text-muted d-flex justify-content-center">O mesmo será usado para fazer login!</small>
-                    <label>Endereço de email:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@yahoo.com" required>
-                    <small id="emailHelp" class="form-text text-muted">Este email será usado para fazer login!.</small>
-                </div>
-                <div class="form-group ">
-                    <label>RG:</label>
-                    <input type="text" class="form-control" placeholder="RG">
-                    <input type="text" class="form-control" placeholder="RG" required>
+                    <p>Dados Pessoais: </p>
                 </div>
 
                 <div class="form-group ">
+
+                    <label>Nome:</label>
+                    <input type="text" class="form-control" placeholder="Nome completo" required>
+
+                </div>
+
+                <div class="form-group ">
+
+                    <label>E-mail:</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@yahoo.com" required>
+                    <small id="emailHelp" class="form-text text-muted d-flex justify-content-center">O mesmo será usado para fazer login!</small>
+
+                </div>
+
+                <div class="form-group ">
+
+                    <label>RG:</label>
+                    <input type="text" class="form-control" placeholder="RG">
+
+                </div>
+
+                <div class="form-group ">
+
                     <label>Senha:</label>
                     <input type="password" class="form-control" placeholder="Senha">
-                    <input type="password" class="form-control" placeholder="Senha" required>
+
                 </div>
+
                 <div class="form-group">
+
                     <label>Repita a Senha:</label>
                     <input type="password" class="form-control" placeholder="Senha">
-                    <input type="password" class="form-control" placeholder="Senha" required>
+
                 </div>
+
             </div>
+
         </form>
         <!--//////////////////////////////////////////////////// Dados de endereço ////////////////////////////////-->
         <form class="dados2 d-flex justify-content-center">
+
             <div class="form-row col-5 lh-lg">
+
                 <div class="d-flex justify-content-center">
                     <p> Informaçoes de endereço: </p>
-                <div>
-                    <p> Informaçoes de indereço: </p>
                 </div>
 
                 <div class="col">
                     <label>CEP:</label>
                     <input type="text" class="form-control" id="cep" placeholder="CEP">
-                    <input type="text" class="form-control" placeholder="CEP" required>
                 </div>
+
                 <div class="col">
                     <label>Endereço:</label>
                     <input type="text" class="form-control" id="rua" placeholder="Rua/Av">
                 </div>
+
                 <div class="col">
                     <label>Bairro:</label>
                     <input type="text" class="form-control" id="bairro" placeholder="Bairro">
-                    <input type="text" class="form-control" placeholder="Endereço">
                 </div>
+
                 <div class="col">
                     <label>Cidade:</label>
                     <input type="text" class="form-control" id="cidade" placeholder="Cidade">
-                    <input type="text" class="form-control" placeholder="Cidade">
                 </div>
+
                 <div class="col">
                     <label>Estado:</label>
-
                     <input type="text" class="form-control" id="estado" placeholder="Estado">
                 </div>
+
                 <div class="col">
                     <label>Número:</label>
-                    <input type="text" class="form-control" placeholder="Estado">
-                </div>
-                <div class="col">
-                    <label>numero:</label>
                     <input type="number" class="form-control" placeholder="numero">
                 </div>
+
                 <div class="col">
                     <label>Complemento:</label>
                     <input type="text" class="form-control" placeholder="Casa/AP/Bloco">
                 </div>
+
                 <small class="form-text text-muted d-flex justify-content-center"> <br>Ao clicar em cadastrar você concorda com os termos!</small>
+
                 <div class="d-flex justify-content-center">
                     <button type="submit" class="btn btn-primary" id="btn">Cadastrar</button>
                 </div>
             </div>
+
         </form>
-        <div>
-            <div class="form-group form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Concordo com o termos!</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-    </div>     
+
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="../js/controller/cadastroController.js"></script>
