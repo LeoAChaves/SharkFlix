@@ -3,15 +3,17 @@ class CadastroController {
     constructor() {}
 
 
-    conversarComModel(buscar) {
+    conversarComModel(buscarCEP) {
 
-        const dados = new CadastroModel() // conversando com o irmão cadastroModel
+        let dados = new CadastroModel() // conversando com o irmão cadastroModel
 
-        dados.conexaoCep(buscar) // vai me retornar 1 para quando o cep nn existir ou retorna um obj com os campos
+        var teste = dados.conexaoCep(buscarCEP) // vai me retornar 1 para quando o cep nn existir ou retorna um obj com os campos
 
-        //   const complementos = new CadastroView() // conversando com o irmão cadastroView
+        console.log(dados.conexaoCep(buscarCEP));
 
-        //  complementos.mostrarDados(fazerConexao)
+        let complementos = new CadastroView() // Conversando com o irmão cadastroView
+
+        complementos.mostrarDados(teste)
 
     }
 

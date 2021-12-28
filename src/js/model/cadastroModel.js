@@ -1,33 +1,21 @@
 class CadastroModel {
 
-    constructor() {
-
-        this._rua = "",
-            this._bairro = "",
-            this._cidade = "",
-            this._estado = ""
-
-    }
-
     conexaoCep(cep) {
 
-        $.getJSON(`https://viacep.com.br/ws/${cep}/json/`, function(resposta) {
+        if (cep.length == 8) {
 
-            if (resposta.erro == true) {
+            var conexao = $.ajax({
+                dataType: "json",
+                url: `https://viacep.com.br/ws/${cep}/json/`,
+                async: false,
 
-                alert("Cep invalido!")
+            }).responseJSON;
 
+            if (conexao.erro == true) {
+                alert("cep erraddo main")
             } else {
-
-                $('#rua').val(resposta.logradouro)
-                $('#bairro').val(resposta.bairro)
-                $('#cidade').val(resposta.localidade)
-                $('#estado').val(resposta.uf)
-
+                return conexao
             }
-
-        })
-
+        }
     }
-
 }
