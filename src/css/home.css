@@ -1,12 +1,12 @@
 .imagen{
     height: 400px;
     object-fit: cover;
-    object-position: 0 2px;
+    object-position: 0 3px;
 }
-.imagen-spirit{
+.imagen-aco{
     height: 400px;
     object-fit: cover;
-    object-position: 0 40%;
+    object-position: 0 20%;
 }
 .imagen-pirata{
     height: 400px;
@@ -18,25 +18,6 @@
     object-fit: cover;
     object-position: 0 20%;
 }
-.imagen-sherek{
-    height: 400px;
-    object-fit: cover;
-    object-position: 0 20%;
-}
-.imagen-gt{
-    height: 400px;
-    object-fit: cover;
-    object-position: 0 2px;
-}
-.imagen-av{
-    height: 400px;
-    object-fit: cover;
-    object-position: 0 20%;
-}
-.imagen-tb{
-    height: 400px;
-    object-position: 0 20%;
-}
 .carousel-indicators button {
     width: 10px !important;
     height: 10px !important;
@@ -44,6 +25,7 @@
 }
 .cards{
     max-width: 18rem;
+    box-sizing: border-box;
 }
 .img-cards{
     object-fit: cover;
@@ -54,8 +36,21 @@
     color: black;
 
 }
-/* .texto{
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-} */
+@media(max-width:430px){
+    .imagen, .imagen-pirata ,.imagen-mad, .imagen-aco{
+        height: 200px;
+        object-position: 0 10px;
+    }
+ }
+@media(max-width:380px){
+    .imagen, .imagen-pirata ,.imagen-mad, .imagen-aco{
+        height: 200px;
+        object-position: 0 10px;
+    }
+ }
+@media(max-width:320px){
+   .imagen, .imagen-pirata ,.imagen-mad,.imagen-aco{
+       height: 200px;
+       object-position: 0 10px;
+   }
+}
