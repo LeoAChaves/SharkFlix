@@ -13,7 +13,7 @@
     />
     <link rel="stylesheet" href="../css/pesquisa.css" />
   </head>
-  <body class="">
+  <body>
     <div
       class="modal fade"
       id="exampleModal"
@@ -49,7 +49,6 @@
         </div>
       </div>
     </div>
-
     <header class="yellow-background">
       <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand text-dark" href="#">Resiliaflix</a>
@@ -120,36 +119,36 @@
             <option value="2">Ano</option>
           </select>
         </div>
-        <div class="input-group mb-3 none">
+        <div class="input-group mb-3 barraDePesquisa">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="basic-addon1">&#128269</span>
           </div>
           <input
             type="text"
-            class="form-control pesquisa-titulo none"
-            placeholder="Batman ..."
+            class="form-control pesquisa-titulo "
+            placeholder="Título"
             aria-describedby="basic-addon1"
           />
           <input
             type="number"
-            class="form-control pesquisa-ano none"
+            class="form-control pesquisa-ano "
             min="1900"
             max="2099"
-            value="2012"
+            placeholder="Ano"
             step="1"
             aria-describedby="basic-addon1"
           />
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary bg-dark" type="button">
+            <button class="btn btn-outline-secondary bg-dark pesquisar" type="button">
               Pesquisar
             </button>
           </div>
         </div>
       </form>
-      <!-- <section class="resultado">
-        <p class="text-danger none">Lamento, nada foi encontrado. &#129301</p>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
+      <section class="resultado">
+        <p class="text-danger nadaEncontrado">Lamento, nada foi encontrado. &#129301</p>
+        <!-- <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="" alt="Film poster">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -157,8 +156,8 @@
           <ul class="list-group list-group-flush">
             <li class="list-group-item">Cras justo odio</li>
           </ul>
-        </div>
-      </section> -->
+        </div> -->
+      </section>
     </main>
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -167,6 +166,9 @@
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-    <script src=""></script>
+    <script src="../js/controller/pesquisaController.js"></script>
+    <script src="../js/model/pesquisaModel.js"></script>
+    <script src="../js/view/pesquisaView.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
