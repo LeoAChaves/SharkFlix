@@ -30,6 +30,7 @@ function requisicao() {
       } else {
         console.log(result.Search);
         result.Search.forEach((filme) => console.log(filme.Title));
+        result.Search.forEach((filme) => console.log(filme.Title));
       }
     },
     error: function () {
@@ -38,7 +39,3 @@ function requisicao() {
   });
 }
 pesquisar.click(requisicao);
-
-// class PesquisaController {
-//   addResultado() {}
-// }

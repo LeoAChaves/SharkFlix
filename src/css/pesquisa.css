@@ -1,5 +1,12 @@
-.background {
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: lavender;
+}
+.background {
+  background-color: #9b9bfb;
 }
 .text-white {
   color: white;
@@ -16,4 +23,9 @@ main {
 }
 .none {
   display: none;
+}
+#footerPrincipal {
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
 }
