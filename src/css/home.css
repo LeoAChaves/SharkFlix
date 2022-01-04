@@ -1,3 +1,15 @@
+body{
+    background-color: lavender;
+}
+.cor-fundo{
+    background-color: lavender;
+}
+.cor-logo{
+    color: #A10CF5 !important
+}
+header{
+    background-color: #9B9BFB;
+}
 .imagen{
     height: 400px;
     object-fit: cover;
@@ -23,19 +35,37 @@
     height: 10px !important;
     border-radius: 50%;
 }
+
 .cards{
     max-width: 18rem;
     box-sizing: border-box;
 }
+.alinhamento{
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box;
+    -webkit-line-clamp: 4; 
+    -webkit-box-orient: vertical;
+}
+
 .img-cards{
     object-fit: cover;
     height: 200px;
 }
 .cor-botao{
-    background-color: darkgoldenrod;
-    color: black;
+    background-color:#8F0BDB ;
+    color: white;
 
 }
+#footerPrincipal{
+    background-color: #590082;
+    color: white;
+    font-weight: bold;
+  }
+  .cor-botao:hover{
+      background-color:  #590082;
+      color: white;
+  }
 @media(max-width:430px){
     .imagen, .imagen-pirata ,.imagen-mad, .imagen-aco{
         height: 200px;

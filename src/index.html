@@ -9,40 +9,32 @@
     <title>Resilia Flix</title>
 </head>
 <body>
-  <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Resilia Flix</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cadastro</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" >Informaçoes</a>
-            <ul class="dropdown-menu" id="dropdown">
-              <li><a class="dropdown-item" href="#">Quem Somos</a></li>
-              <li><a class="dropdown-item" href="#">Contato</a></li>
-              <li><hr class="dropdown-divider"></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+  <header class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="container-fluid">
+    <a class="navbar-brand" id="corLogo" href="#">ResiliaFlix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+    <a class="nav-link active" id="corLink" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="corLink" href="#">Pesquisar</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link " href="#">Contato</a>
+    </li>
+    </ul>
+    <form class="d-flex">
+    <button class="btn cor-botao" id="corBotaoContato" type="submit">Login/Sigin</button>
+    </form>
     </div>
-  </nav>
-</header>
+    </nav>
+    </header>
 <main>
-  <section id="carouselExampleCaptions" class="carousel slide pt-4" data-bs-ride="carousel" data-bs-interval="3000">
+  <section id="carouselExampleCaptions" class="carousel slide pt-4 mb-3" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -78,101 +70,101 @@
     </button>
   </section>
   <section class="filmes container bg-light">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center cor-fundo">
         <article class="card borda-cor cards p-0 m-4 col-12 col-m-4" >
           <img src="../src/assets/imgHome/Spirit.jpg" class="card-img-top img-cards" alt="Sprit O corsel Indomavel">
-            <div class="card-body">
-              <h5 class="card-title">Spirit o Corsel Indomavel </h5>
-              <p class="card-text text-truncate"> No final do século XVII em pleno Oeste norte-americano vive Spirit, um cavalo que resiste a ser domado pelo homem. Ele se apaixona por uma égua local, chamada Chuva, e desenvolve uma grande amizade com um jovem índio Lakota chamado Pequeno Rio. Juntos eles acompanham a colonização do local onde vivem, percebendo as mudanças que a chegada da civilização fazem em seu dia-a-dia.</p>
+            <div class="card-body ">
+              <h5 class="card-title">SPIRIT - THE INDOMITABLE CHARGER </h5>
+              <p class="card-text alinhamento " > At the end of the 17th century, in the middle of the North American West, Spirit lives on, a horse that resists being tamed by man. He falls in love with a local mare, called Chuva, and develops a great friendship with a young Lakota Indian named Pequeno Rio. Together they follow the colonization of the place where they live, realizing the changes that the arrival of civilization make in their daily lives. day.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#spirit">Trailer</button>
             </div>
         </article>
         <article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/iron-man-3-1200-1200-675-675-crop-000000.jpg" class="card-img-top img-cards" alt="Homem de Ferro 3">
-            <div class="card-body">
-              <h5 class="card-title">Homem de Ferro 3</h5>
-              <p class="card-text text-truncate"> Desde o ataque dos chitauri a Nova York, Tony Stark (Robert Downey Jr.) vem enfrentando dificuldades para dormir e, quando consegue, tem terríveis pesadelos. Ele teme não conseguir proteger sua namorada Pepper Potts (Gwyneth Paltrow) dos vários inimigos que passou a ter após vestir a armadura do Homem de Ferro. Um deles, o Mandarim (Ben Kingsley), decide atacá-lo com força total, destruindo sua mansão e colocando a vida de Pepper em risco. Para enfrentá-lo Stark precisará ressurgir do fundo do mar, para onde foi levado junto com os destroços da mansão, e superar seu maior medo: o de fracassar.</p>
+            <div class="card-body tamanho">
+              <h5 class="card-title">IRON MAN 3</h5>
+              <p class="card-text alinhamento "> Since the Chitauri attack on New York, Tony Stark (Robert Downey Jr.) has struggled to sleep, and when he does, he has terrible nightmares. He fears he will not be able to protect his girlfriend Pepper Potts (Gwyneth Paltrow) from the many enemies he has come to have after wearing Iron Man's armor. One of them, the Mandarin (Ben Kingsley), decides to attack him with full force, destroying his mansion and putting Pepper's life at risk. To face him Stark will need to resurface from the bottom of the sea, where he was taken along with the wreckage of the mansion, and overcome his greatest fear: that of failing.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#ironman">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/troia.jpg" class="card-img-top img-cards" alt="Troia">
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title">Troy</h5>
-              <p class="card-text text-truncate"> Em 1193 A.C., Paris (Orlando Bloom) é um príncipe que provoca uma guerra da Messência contra Tróia, ao afastar Helena (Diane Kruger) de seu marido, Menelaus (Brendan Gleeson). Tem início então uma sangrenta batalha, que dura por mais de uma década. A esperança do Priam (Peter O'Toole), rei de Tróia, em vencer a guerra está nas mãos de Aquiles (Brad Pitt), o maior herói da Grécia, e seu filho Hector (Eric Bana).</p>
+              <p class="card-text  alinhamento"> In 1193 BC, Paris (Orlando Bloom) is a prince who provokes a Messence war against Troy by alienating Helen (Diane Kruger) from her husband, Menelaus (Brendan Gleeson). Then begins a bloody battle, which lasts for more than a decade. The hope of the Priam (Peter O'Toole), King of Troy, to win the war lies in the hands of Achilles (Brad Pitt), Greece's greatest hero, and his son Hector (Eric Bana).</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#troy">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/wall-e.jpg" class="card-img-top img-cards" alt="Wall-e">
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title">Wall-e</h5>
-              <p class="card-text text-truncate"> Após entulhar a Terra de lixo e poluir a atmosfera com gases tóxicos, a humanidade deixou o planeta e passou a viver em uma gigantesca nave. O plano era que o retiro durasse alguns poucos anos, com robôs sendo deixados para limpar o planeta. Wall-E é o último destes robôs, que se mantém em funcionamento graças ao auto-conserto de suas peças. Sua vida consiste em compactar o lixo existente no planeta, que forma torres maiores que arranha-céus, e colecionar objetos curiosos que encontra ao realizar seu trabalho. Até que um dia surge repentinamente uma nave, que traz um novo e moderno robô: Eva. A princípio curioso, Wall-E logo se apaixona pela recém-chegada.</p>
+              <p class="card-text alinhamento"> After littering the Earth with garbage and polluting the atmosphere with toxic gases, humanity left the planet and lived in a gigantic spaceship. The plan was for the retreat to last a few years, with robots being left to clean up the planet. Wall-E is the last of these robots, which keeps itself in operation thanks to the self-repair of its parts. His life consists of compacting the planet's existing garbage, which forms towers bigger than skyscrapers, and collecting curious objects that he finds while doing his work. Until one day a spaceship suddenly appears, bringing a new and modern robot: Eva. At first curious, Wall-E soon falls in love with the newcomer.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#wall">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/supernatural.jpeg" class="card-img-top img-cards" alt="Supernatural">
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title ">Supernatural</h5>
-              <p class="card-text text-truncate"> Desde que era pequeno, Sam Winchester (Jared Padalecki) tentava escapar do próprio passsado. Após a misteriosa morte de Mary (Samantha Smith), o pai de Sam passou a procurar vingança contra as forças do mal que mataram a esposa, destruindo qualquer ser maligno que cruze o seu caminho. Ao contrário de Sam, Dean (Jensen Ackles), seu irmão mais velho, sempre quis seguir os passos do pai. Sam parece determinado a se livrar do "negócio da família", mas sua vida está prestes a tomar um rumo indesejado quando não lhe resta outra escolha a não ser se unir ao irmão.</p>
+              <p class="card-text alinhamento"> Ever since he was little, Sam Winchester (Jared Padalecki) has tried to escape his past. After the mysterious death of Mary (Samantha Smith), Sam's father began to seek revenge against the evil forces that killed his wife, destroying any evil being that crosses his path. Unlike Sam, Dean (Jensen Ackles), his older brother, has always wanted to follow in his father's footsteps. Sam seems determined to get out of the "family business," but his life is about to take an unwanted turn when he has no choice but to join his brother.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#supernatural">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/evangelion-blogroll-1616636888249.jpeg" class="card-img-top img-cards" alt="Evangelion 3.0+1">
-            <div class="card-body">
-              <h5 class="card-title">Evangelion 3.0+1</h5>
-              <p class="card-text text-truncate"> Depois de perder a vontade de viver, Shinji Ikari renasce e aprende o significado da esperança. A WILLE se posiciona para impedir o Impacto Final.</p>
+            <div class="card-body ">
+              <h5 class="card-title">EVANGELION: 3.0+1.01 </h5>
+              <p class="card-text alinhamento"> In Evangelion: 3.0+1.01, Misato and the anti-NERV group arrive in Paris, a city red due to the nuclei. The crew of the Wunder spacecraft lands in a containment tower. They have 720 seconds to restore the city. When NERV EVAs appear, Mari must intercept them with her new unit 8. Meanwhile, Shinji and Asuka roam Japan.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#evangelion">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/grinch.jpg" class="card-img-top img-cards" alt="O Grinch">
-            <div class="card-body">
-              <h5 class="card-title">o Grinch</h5>
-              <p class="card-text text-truncate"> Um Grinch (Jim Carrey) que odeia o Natal resolve criar um plano para impedir que os habitantes da pequena cidade de Quemlândia possam comemorar a data festiva. Para tanto, na véspera do grande dia, o Grinch resolve invadir as casas das pessoas e furtivamente roubar delas tudo o que esteja relacionado ao Natal.</p>
+            <div class="card-body ">
+              <h5 class="card-title">The Grinch</h5>
+              <p class="card-text alinhamento "> A Grinch (Jim Carrey) who hates Christmas decides to create a plan to prevent the inhabitants of the small town of Quemlândia from celebrating the holiday. For that, on the eve of the big day, the Grinch decides to invade people's homes and stealthily steal from them everything related to Christmas.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#grinch">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/fauno.jpg" class="card-img-top img-cards" alt="O Labirinto de Fauno">
-            <div class="card-body">
-              <h5 class="card-title">O Labirinto de Fauno</h5>
-              <p class="card-text text-truncate"> O Labirinto do Fauno se passa na Espanha, 1944. Oficialmente a Guerra Civil já terminou, mas um grupo de rebeldes ainda luta nas montanhas ao norte de Navarra. Ofelia (Ivana Baquero), de 10 anos, muda-se para a região com sua mãe, Carmen (Ariadna Gil). Lá as espera seu novo padrasto, um oficial fascista que luta para exterminar os guerrilheiros da localidade. Solitária, a menina logo descobre a amizade de Mercedes (Maribel Verdú), jovem cozinheira da casa, que serve de contato secreto dos rebeldes. Além disso, em seus passeios pelo jardim da imensa mansão em que moram, Ofelia descobre um labirinto que faz com que todo um mundo de fantasias se abra, trazendo consequências para todos à sua volta.</p>
+            <div class="card-body ">
+              <h5 class="card-title">PAN'S LABYRINTH</h5>
+              <p class="card-text alinhamento"> The Faun's Labyrinth takes place in Spain, 1944. Officially the Civil War is over, but a group of rebels is still fighting in the mountains north of Navarre. Ofelia (Ivana Baquero), 10 years old, moves to the region with her mother, Carmen (Ariadna Gil). There awaits them their new stepfather, a fascist officer who is fighting to exterminate the local guerrillas. Lonely, the girl soon discovers the friendship of Mercedes (Maribel Verdú), a young cook at the house, who serves as a secret contact for the rebels. Furthermore, on her walks through the garden of the immense mansion where they live, Ofelia discovers a labyrinth that opens up a whole world of fantasies, bringing consequences for everyone around her.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#fauno">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/matri1.jpg" class="card-img-top img-cards" alt="Matrix">
-            <div class="card-body">
-              <h5 class="card-title">Matrix</h5>
-              <p class="card-text text-truncate"> Em um futuro próximo, Thomas Anderson (Keanu Reeves), um jovem programador de computador que mora em um cubículo escuro, é atormentado por estranhos pesadelos nos quais encontra-se conectado por cabos e contra sua vontade, em um imenso sistema de computadores do futuro. Em todas essas ocasiões, acorda gritando no exato momento em que os eletrodos estão para penetrar em seu cérebro. À medida que o sonho se repete, Anderson começa a ter dúvidas sobre a realidade. Por meio do encontro com os misteriosos Morpheus (Laurence Fishburne) e Trinity (Carrie-Anne Moss), Thomas descobre que é, assim como outras pessoas, vítima do Matrix, um sistema inteligente e artificial que manipula a mente das pessoas, criando a ilusão de um mundo real enquanto usa os cérebros e corpos dos indivíduos para produzir energia. Morpheus, entretanto, está convencido de que Thomas é Neo, o aguardado messias capaz de enfrentar o Matrix e conduzir as pessoas de volta à realidade e à liberdade.</p>
+            <div class="card-body ">
+              <h5 class="card-title">The Matrix</h5>
+              <p class="card-text alinhamento "> In the near future, Thomas Anderson (Keanu Reeves), a young computer programmer who lives in a dark cubicle, is plagued by strange nightmares in which he finds himself wired against his will in a huge computer system of the future . On all these occasions, he wakes up screaming just as the electrodes are about to penetrate his brain. As the dream repeats itself, Anderson begins to have doubts about reality. Through an encounter with the mysterious Morpheus (Laurence Fishburne) and Trinity (Carrie-Anne Moss), Thomas discovers that he is, like other people, a victim of the Matrix, an intelligent and artificial system that manipulates people's minds, creating illusion of a real world while using the brains and bodies of individuals to produce energy. Morpheus, however,</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#matrix">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/Pokémon_2000.jpg" class="card-img-top img-cards" alt="Pokémon">
-            <div class="card-body">
-              <h5 class="card-title">Pokémon</h5>
-              <p class="card-text text-truncate"> Em Pokémon - O Filme 2000, enquanto Ash, Misty e Tracey viajam num barco, Giraldan, um colecionador de bichinhos pokémon, prepara seu mais novo plano: capturar o raro Lugia. Para tanto, provoca uma catástrofe climática quando ataca e retira de suas ilhas os três pássaros sagrados: Moltres, o pássaro-guardião de fogo; Zapdos, o pássaro-guardião do trovão; e Articuno, o pássaro-guardião do gelo. Para evitar o completo colapso do mundo em que vivem, os pokémons e seus treinadores resolvem se unir para enfrentar juntos Giraldan.</p>
+            <div class="card-body ">
+              <h5 class="card-title">POKÉMON - THE MOVIE </h5>
+              <p class="card-text alinhamento"> In Pokémon - The Movie 2000, while Ash, Misty and Tracey travel on a boat, Giraldan, a Pokémon pet collector, prepares his newest plan: to capture the rare Lugia. Therefore, it causes a climatic catastrophe when it attacks and removes the three sacred birds from its islands: Moltres, the fire-guard-bird; Zapdos, the bird-guard of thunder; and Articuno, the guardian bird of the ice. To avoid the complete collapse of the world they live in, the Pokémon and their trainers decide to unite to face Giraldan together.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#pokémon">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-" >
           <img src="../src/assets/imgHome/reileao.jpg" class="card-img-top img-cards" alt="O Rei Leão">
-            <div class="card-body">
-              <h5 class="card-title">O Rei Leão</h5>
-              <p class="card-text text-truncate"> Clássico da Disney, a animação acompanha Mufasa (voz de James Earl Jones), o Rei Leão, e a rainha Sarabi (voz de Madge Sinclair), apresentando ao reino o herdeiro do trono, Simba (voz de Matthew Broderick). O recém-nascido recebe a bênção do sábio babuíno Rafiki (voz de Robert Guillaume), mas ao crescer é envolvido nas artimanhas de seu tio Scar (voz de Jeremy Irons), o invejoso e maquiavélico irmão de Mufasa, que planeja livrar-se do sobrinho e herdar o trono.</p>
+            <div class="card-body ">
+              <h5 class="card-title">THE LION KING</h5>
+              <p class="card-text alinhamento">A Disney classic, the animation follows Mufasa (voiced by James Earl Jones), the Lion King, and Queen Sarabi (voiced by Madge Sinclair), introducing the kingdom to the heir to the throne, Simba (voiced by Matthew Broderick). The newborn receives the blessing of the wise baboon Rafiki (voice of Robert Guillaume), but grows up involved in the antics of his uncle Scar (voice of Jeremy Irons), the envious and Machiavellian brother of Mufasa, who plans to get rid of the nephew and inherit the throne..</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#reileao">Trailer</button>
             </div>
         </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
           <img src="../src/assets/imgHome/JUMANJI.jpg" class="card-img-top img-cards" alt="JUMANJI">
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title">JUMANJI</h5>
-              <p class="card-text text-truncate"> Em 1869, dois garotos apavorados enterram um baú e, cem anos depois, o filho de um empresário descobre que dentro dele há um jogo chamado Jumanji. Quando começa a jogar com uma amiga, ele logo é penalizado a ficar na floresta até que alguém tire cinco ou oito. Como na jogada seguinte ela é atacada por morcegos, em virtude de seu posicionamento no tabuleiro, o jogo é interrompido e ele imediatamente fica preso dentro de Jumanji. Mas, vinte e seis anos depois, duas crianças começam a jogar e uma acaba libertando-o. Porém, a única forma de deixar tudo como antes é terminar a partida, mas para isto é preciso achar a participante da partida de 1969. Juntos eles enfrentam perigos, que surgem a cada jogada, e enquanto o jogo se desenrola a cidade se transforma em um caos, pois animais selvagens, plantas assassinas e até um caçador de pessoas saem do tabuleiro e vão permanecer enquanto o jogo não findar.</p>
+              <p class="card-text alinhamento"> In 1869, two terrified boys bury a chest and, a hundred years later, a businessman's son discovers that inside it is a game called Jumanji. When he starts playing with a friend, he is soon penalized to stay in the woods until someone rolls a five or eight. As in the next move she is attacked by bats, due to her positioning on the board, the game is interrupted and he is immediately trapped inside Jumanji. But twenty-six years later, two children start playing and one ends up setting him free. However, the only way to leave everything as before is to finish the game, but for that it is necessary to find the participant in the 1969 game. chaos, because wild animals.</p>
               <a href="#" class="btn  cor-botao">Ver +</a>
               <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#JUMANJI">Trailer</button>
             </div>
@@ -184,7 +176,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Spirit o Corsel Indomavel</h5>
+        <h5 class="modal-title" id="exampleModalLabel">THE INDOMITABLE CHARGER</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -264,7 +256,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">A Lagoa Azul</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Evangelion</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -280,7 +272,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">O Grinch</h5>
+        <h5 class="modal-title" id="exampleModalLabel">The Grinch</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -296,7 +288,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">O Labirinto de Fauno</h5>
+        <h5 class="modal-title" id="exampleModalLabel">PAN'S LABYRINTH</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -312,7 +304,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Matrix</h5>
+        <h5 class="modal-title" id="exampleModalLabel">The Matrix</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -344,7 +336,7 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">O Rei Leão</h5>
+        <h5 class="modal-title" id="exampleModalLabel">THE LION KING</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
@@ -375,16 +367,9 @@
   
 
   </main>
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-    </ul>
-    <p class="text-center text-muted">&copy; 2021 Company, Inc</p>
-  </footer>
+  <footer class="text-center p-3" id="footerPrincipal">
+    <p class="m-0">Direitos Autoriais &copy;<br>Projected by Grupo 1 - Modulo 2<br>T11 - Resilia</p>
+</footer>
     <script src="../src/js/main.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
