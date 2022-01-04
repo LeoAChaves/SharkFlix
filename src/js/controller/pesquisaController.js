@@ -1,9 +1,5 @@
 const metodoPesquisa = $(".metodo-pesquisa");
 const pesquisar = $(".pesquisar");
-$(".barraDePesquisa").addClass("none");
-$(".pesquisa-titulo").addClass("none");
-$(".pesquisa-ano").addClass("none");
-$(".nadaEncontrado").addClass("none");
 metodoPesquisa.change(function () {
   $(".nadaEncontrado").addClass("none");
   if (metodoPesquisa.val() == 1) {
@@ -30,7 +26,17 @@ function requisicao() {
       } else {
         console.log(result.Search);
         result.Search.forEach((filme) => console.log(filme.Title));
-        result.Search.forEach((filme) => console.log(filme.Title));
+        result.Search.forEach((filme) => console.log(filme.Year));
+        result.Search.forEach((filme) => {
+          const div = $("<div>");
+          const poster = $("<img>").attr("src", filme.Poster);
+          const titulo = $("<h3>").text(filme.Title);
+          const p = $("<p>").text(filme.Year);
+          div.append(poster);
+          div.append(titulo);
+          div.append(p);
+          $(".resultado").append(div);
+        });
       }
     },
     error: function () {
