@@ -11,32 +11,35 @@
 
 <body>
     <section class="bloco-principal">
-        <h2>Login</h2>
+        <div class="alinhar-centro">
+            <form action="" method="get" class="formulario">
+                <div class="imgcontainer">
+                    <img src="logo.png" alt="Avatar" class="avatar">
+                </div>
 
-        <form action="" method="get">
-            <div class="imgcontainer">
-                <img src="logo.png" alt="Avatar" class="avatar">
-            </div>
+                <div class="container">
+                    <label for="email"><b>Username</b></label>
+                    <input type="email" placeholder="Enter Email" name="email" id="email" required>
 
-            <div class="container">
-                <label for="email"><b>Username</b></label>
-                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+                    <label for="pass"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
 
-                <label for="pass"><b>Password</b></label>
-                <input type="password" placeholder="Enter Password" name="pass" id="pass" required>
+                    <button type="submit" onclick="validar()">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
 
-                <button type="submit" onclick="validar()">Login</button>
-                <label>
-                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                </label>
-            </div>
-
-            <div class="botoes">
-                <button type="button" class="cancelbtn">Cancel</button>
-                <span class="pass">Forgot <a href="./checkout.html">password?</a></span>
-            </div>
-        </form>
+                <div class="botoes">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <span class="pass">Forgot <a href="./checkout.html">password?</a></span>
+                </div>
+            </form>
+        </div>
     </section>
+    <footer class="text-center p-3" id="footerPrincipal">
+        <p class="m-0">Direitos Autoriais &copy;<br>Projected by Grupo 1 - Modulo 2<br>T11 - Resilia</p>
+    </footer>
     <script src="../js/main.js"></script>
 </body>
 
