@@ -1,0 +1,58 @@
+main{
+  margin-top: 100px;
+}
+
+header{
+  background-color: #9B9BFB;
+}
+
+body{
+  background-color: lavender;
+}
+
+
+.card-largura{
+  max-width: 18rem;
+}
+
+.card-posicao-imagem{
+  object-fit: cover;
+  height: 200px;
+}
+
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.corBotao{
+  background-color: #A10CF5;
+  color:black;
+  transition: 1s;
+}
+
+.corBotao:hover{
+  background-color: #3C055C;
+  color: white;
+}
+
+#corLogo{
+  color: black;
+}
+
+#corBotaoContato{
+  background-color: #8F0BDB;
+}
+
+#corBotaoContato:hover{
+  background-color: #BA80DB;
+}
+
+
+#footerPrincipal{
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+}
