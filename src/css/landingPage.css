@@ -1,0 +1,22 @@
+header{
+    background-color: #9B9BFB;
+}
+
+main{
+    background-image: linear-gradient(180deg,#9B9BFB,#590082);
+}
+
+#footerPrincipal{
+    background-color: #590082;
+    color: white;
+    font-weight: bold;
+  }
+
+.card{
+    width: 18rem;
+}
+
+.imgLogo{
+    width: 300px;
+    height:300px ;
+}
