@@ -1,0 +1,19 @@
+.background {
+  background-color: lavender;
+}
+.text-white {
+  color: white;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pesquisa {
+  margin-top: 60px;
+  width: 60%;
+}
+.none {
+  display: none;
+}
