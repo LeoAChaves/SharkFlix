@@ -49,6 +49,7 @@ input[type="password"] {
 }
 
 button {
+
     background-color: #8F0BDB;
     color: white;
     padding: 14px 20px;
@@ -99,6 +100,7 @@ span.pass {
     color: white;
     font-weight: bold;
     margin-top: 50px;
+
 }
 
 /* Change styles for span and cancel button on extra small screens */
