@@ -17,8 +17,6 @@ $('.salvar').click((e)=>{
 })
 
 
-
-
 // // função para salvar os dados do login do usuário no cache do navegador
 // function salvar() {
 //    let mail = [];
@@ -57,3 +55,5 @@ $('.salvar').click((e)=>{
 //     }
     
 // }
+
+// const controller = new PesquisaController();
