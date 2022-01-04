@@ -1,12 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+    background-color: #590082;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
-* {
-    box-sizing: border-box;
-}
 
-/* Full-width input fields */
+header{
+  background-color: #9B9BFB;
+  }
+  
 input[type=email], 
 input[type=password] {
   width: 100%;
@@ -28,7 +34,6 @@ hr {
   margin-bottom: 25px;
 }
 
-/* Set a style for all buttons */
 button {
   background-color: #a7a400;
   color: white;
@@ -44,31 +49,33 @@ button:hover {
   opacity:1;
 }
 
-/* Extra styles for the cancel button */
 .cancelbtn {
   padding: 14px 20px;
   background-color: #1b1817;
 }
 
-/* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .salvar {
   float: left;
   width: 50%;
 }
 
-/* Add padding to container elements */
 .botoes {
   padding: 15px;
 }
 
-/* Clear floats */
+
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
+#footerPrincipal{
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+}
+
 @media screen and (max-width: 300px) {
   .cancelbtn, .salvar {
      width: 100%;

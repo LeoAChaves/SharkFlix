@@ -5,24 +5,32 @@
     clear: none;
 }
 body {
+    display: flex;
+    height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main{
+    margin-top: 100px;
 }
 
 .bloco-principal {
     display: flex;
-    margin: 20px 15px;
     width: 100%;
 }
-
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 form {
+    width: 400px;
     border: 3px solid #f1f1f1;
 }
 
 .alinhar-centro {
     display: flex;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* align-content: center; */
 }
 
 input[type="email"],
@@ -58,11 +66,14 @@ button:hover {
 
 .imgcontainer {
     text-align: center;
-    margin: 24px 0 12px 0;
+    margin-top: 15px;
+    
 }
 
-img.avatar {
-    width: 40%;
+.img {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
 }
 
