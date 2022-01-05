@@ -109,6 +109,11 @@ span.pass {
   text-align: center;
 }
 
+.textorecupera{
+    text-align: center;
+}
+
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
   span.pass {

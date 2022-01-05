@@ -27,14 +27,21 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  /* align-items: center; */
+  /* text-align: left; */
 }
 .resultado div {
-  text-align: center;
+  border: 1px black solid;
+  border-radius: 2px;
+  padding: 5px;
+  /* text-align: center; */
   margin: 20px;
+  width: 50%;
 }
 .resultado img {
+  float: left;
   height: 200px;
+  margin-right: 30px;
 }
 .resultado h3,
 .resultado p {
