@@ -26,8 +26,8 @@ class CadastroController {
 
         emailView.verEmail(resposta)
 
-
     }
+
 
 
 }

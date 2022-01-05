@@ -16,10 +16,12 @@ class CadastroModel {
             } else {
 
                 $('#cepCorreto').text('')
+
                 return conexao
             }
         }
     }
+
 
 
     verifiarSenha() {
@@ -51,6 +53,7 @@ class CadastroModel {
         $('#formPessoal').submit()
 
     }
+
 
 
 

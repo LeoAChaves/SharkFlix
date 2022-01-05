@@ -1,5 +1,12 @@
-.yellow-background {
-  background-color: yellow;
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: lavender;
+}
+.background {
+  background-color: #9b9bfb;
 }
 .text-white {
   color: white;
@@ -14,6 +21,33 @@ main {
   margin-top: 60px;
   width: 60%;
 }
-/* .none {
+.resultado {
+  margin: 50px 0;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.resultado div {
+  margin: 20px;
+}
+.resultado img {
+  height: 200px;
+}
+.resultado h3,
+.resultado p {
+  font-size: smaller;
+}
+.none {
+  display: none;
+}
+#footerPrincipal {
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 400px) {
+  .barraDePesquisa span {
     display: none;
-  } */
+  }
+}

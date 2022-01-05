@@ -15,5 +15,4 @@ $('#formPessoal').submit(() => {
     alert("tentou enviar")
 
 
-
 })
