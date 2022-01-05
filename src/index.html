@@ -1,1 +1,905 @@
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/css/home.css">
+    <link rel="shortcut icon" href="./assets/imgHome/batman.jpg" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resilia Flix</title>
+</head>
+
+<body>
+
+  <header class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav class="container-fluid">
+    <a class="navbar-brand" id="corLogo" href="#">ResiliaFlix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+    <a class="nav-link active" id="corLink" aria-current="page" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" id="corLink" href="#">Pesquisar</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link " href="#">Contato</a>
+    </li>
+    </ul>
+    <form class="d-flex">
+    <button class="btn cor-botao" id="corBotaoContato" type="submit">Login/Sigin</button>
+    </form>
+    </div>
+    </nav>
+    </header>
+<main>
+  <section id="carouselExampleCaptions" class="carousel slide pt-4 mb-3" data-bs-ride="carousel" data-bs-interval="3000">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    </div>
+    <div class="carousel-inner ">
+      <div class="carousel-item active">
+        <img src="../src/assets/imgHome/iron-man-3-1200-1200-675-675-crop-000000.jpg" class="d-block w-100 imagen-aco" alt="Homem de Aço">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/assets/imgHome/liga2.jpg" class="d-block w-100 imagen" alt="Liga da Justiça">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/assets/imgHome/bt.jpg" class="d-block w-100 imagen" alt="Batman Begins">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/assets/imgHome/pr4.jpg" class="d-block w-100 imagen-pirata" alt="Piratas do Caribe">
+      </div>
+      <div class="carousel-item">
+        <img src="../src/assets/imgHome/madmax.png" class="d-block w-100 imagen-mad" alt="Mad Max Estrada em Furia">
+
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </section>
+  <section class="filmes container bg-light">
+    <div class="row justify-content-center cor-fundo">
+        <article class="card borda-cor cards p-0 m-4 col-12 col-m-4" >
+          <img src="https://m.media-amazon.com/images/M/MV5BMTgyOTUzNDA1N15BMl5BanBnXkFtZTYwNjgwMDM3._V1_SX300.jpg" class="card-img-top img-cards" alt="Sprit O corsel Indomavel">
+            <div class="card-body ">
+              <h5 class="card-title">Spirit: Stallion of the Cimarron</h5>
+              <p class="card-text alinhamento " > At the end of the 17th century, in the middle of the North American West, Spirit lives on, a horse that resists being tamed by man. He falls in love with a local mare, called Chuva, and develops a great friendship with a young Lakota Indian named Pequeno Rio. Together they follow the colonization of the place where they live, realizing the changes that the arrival of civilization make in their daily lives. day.</p>
+              <a href="#" class="btn  cor-botao " data-bs-toggle="modal" data-bs-target="#spirit-botao" onclick="requisicao('tt0166813')" >Ver +</a>
+
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#spirit">Trailer</button>
+            </div>
+        </article>
+        <article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BMjE5MzcyNjk1M15BMl5BanBnXkFtZTcwMjQ4MjcxOQ@@._V1_SX300.jpg" class="card-img-top img-cards" alt="Homem de Ferro 3">
+            <div class="card-body tamanho">
+              <h5 class="card-title">IRON MAN 3</h5>
+              <p class="card-text alinhamento "> Since the Chitauri attack on New York, Tony Stark (Robert Downey Jr.) has struggled to sleep, and when he does, he has terrible nightmares. He fears he will not be able to protect his girlfriend Pepper Potts (Gwyneth Paltrow) from the many enemies he has come to have after wearing Iron Man's armor. One of them, the Mandarin (Ben Kingsley), decides to attack him with full force, destroying his mansion and putting Pepper's life at risk. To face him Stark will need to resurface from the bottom of the sea, where he was taken along with the wreckage of the mansion, and overcome his greatest fear: that of failing.</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#iron-botao" onclick="requisicao('tt1300854')">Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#ironman">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BMTk5MzU1MDMwMF5BMl5BanBnXkFtZTcwNjczODMzMw@@._V1_SX300.jpg" class="card-img-top img-cards" alt="Troia">
+            <div class="card-body ">
+              <h5 class="card-title">Troy</h5>
+              <p class="card-text  alinhamento"> In 1193 BC, Paris (Orlando Bloom) is a prince who provokes a Messence war against Troy by alienating Helen (Diane Kruger) from her husband, Menelaus (Brendan Gleeson). Then begins a bloody battle, which lasts for more than a decade. The hope of the Priam (Peter O'Toole), King of Troy, to win the war lies in the hands of Achilles (Brad Pitt), Greece's greatest hero, and his son Hector (Eric Bana).</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#troy-botao" onclick="requisicao('tt0332452')" >Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#troy">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BMjExMTg5OTU0NF5BMl5BanBnXkFtZTcwMjMxMzMzMw@@._V1_SX300.jpg" class="card-img-top img-cards" alt="Wall-e">
+            <div class="card-body ">
+              <h5 class="card-title">Wall-e</h5>
+              <p class="card-text alinhamento"> After littering the Earth with garbage and polluting the atmosphere with toxic gases, humanity left the planet and lived in a gigantic spaceship. The plan was for the retreat to last a few years, with robots being left to clean up the planet. Wall-E is the last of these robots, which keeps itself in operation thanks to the self-repair of its parts. His life consists of compacting the planet's existing garbage, which forms towers bigger than skyscrapers, and collecting curious objects that he finds while doing his work. Until one day a spaceship suddenly appears, bringing a new and modern robot: Eva. At first curious, Wall-E soon falls in love with the newcomer.</p>
+              <a href="#" class="btn  cor-botao"data-bs-toggle="modal" data-bs-target="#wall-botao" onclick="requisicao('tt0910970')"  >Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#wall">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BNzRmZWJhNjUtY2ZkYy00N2MyLWJmNTktOTAwY2VkODVmOGY3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_SX300.jpg" class="card-img-top img-cards" alt="Supernatural">
+            <div class="card-body ">
+              <h5 class="card-title ">Supernatural</h5>
+              <p class="card-text alinhamento"> Ever since he was little, Sam Winchester (Jared Padalecki) has tried to escape his past. After the mysterious death of Mary (Samantha Smith), Sam's father began to seek revenge against the evil forces that killed his wife, destroying any evil being that crosses his path. Unlike Sam, Dean (Jensen Ackles), his older brother, has always wanted to follow in his father's footsteps. Sam seems determined to get out of the "family business," but his life is about to take an unwanted turn when he has no choice but to join his brother.</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#super-botao" onclick="requisicao('tt0460681')" >Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#supernatural">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BMjJiMDE1NzUtY2E1Yy00MDZlLWEyMjYtNTMyYzcyNWMzMTJhXkEyXkFqcGdeQXVyODc0OTEyNDU@._V1_SX300.jpg" class="card-img-top img-cards" alt="Evangelion 3.0+1">
+            <div class="card-body ">
+              <h5 class="card-title">EVANGELION: 3.0+1.01 </h5>
+              <p class="card-text alinhamento"> In Evangelion: 3.0+1.01, Misato and the anti-NERV group arrive in Paris, a city red due to the nuclei. The crew of the Wunder spacecraft lands in a containment tower. They have 720 seconds to restore the city. When NERV EVAs appear, Mari must intercept them with her new unit 8. Meanwhile, Shinji and Asuka roam Japan.</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#evangelion-botao" onclick="requisicao('tt2458948')"  >Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#evangelion">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BNWNiNTczNzEtMjQyZC00MjFmLTkzMDMtODk4ZGMyZmE0N2E4XkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg" class="card-img-top img-cards" alt="O Grinch">
+            <div class="card-body ">
+              <h5 class="card-title">The Grinch</h5>
+              <p class="card-text alinhamento "> A Grinch (Jim Carrey) who hates Christmas decides to create a plan to prevent the inhabitants of the small town of Quemlândia from celebrating the holiday. For that, on the eve of the big day, the Grinch decides to invade people's homes and stealthily steal from them everything related to Christmas.</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#grinch-botao" onclick="requisicao('tt0170016')" >Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#grinch">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BNzJlMjI2NjEtY2FmNy00ZTE0LWJjYWEtZDg0YmY1ZDBlNmEyXkEyXkFqcGdeQXVyOTI5NTk5NTQ@._V1_SX300.jpg" class="card-img-top img-cards" alt="O Labirinto de Fauno">
+            <div class="card-body ">
+              <h5 class="card-title">PAN'S LABYRINTH</h5>
+              <p class="card-text alinhamento"> The Faun's Labyrinth takes place in Spain, 1944. Officially the Civil War is over, but a group of rebels is still fighting in the mountains north of Navarre. Ofelia (Ivana Baquero), 10 years old, moves to the region with her mother, Carmen (Ariadna Gil). There awaits them their new stepfather, a fascist officer who is fighting to exterminate the local guerrillas. Lonely, the girl soon discovers the friendship of Mercedes (Maribel Verdú), a young cook at the house, who serves as a secret contact for the rebels. Furthermore, on her walks through the garden of the immense mansion where they live, Ofelia discovers a labyrinth that opens up a whole world of fantasies, bringing consequences for everyone around her.</p>
+            <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#pan-botao" onclick="requisicao('tt0457430')" >Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#fauno">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg" class="card-img-top img-cards" alt="Matrix">
+            <div class="card-body ">
+              <h5 class="card-title">The Matrix</h5>
+              <p class="card-text alinhamento "> In the near future, Thomas Anderson (Keanu Reeves), a young computer programmer who lives in a dark cubicle, is plagued by strange nightmares in which he finds himself wired against his will in a huge computer system of the future . On all these occasions, he wakes up screaming just as the electrodes are about to penetrate his brain. As the dream repeats itself, Anderson begins to have doubts about reality. Through an encounter with the mysterious Morpheus (Laurence Fishburne) and Trinity (Carrie-Anne Moss), Thomas discovers that he is, like other people, a victim of the Matrix, an intelligent and artificial system that manipulates people's minds, creating illusion of a real world while using the brains and bodies of individuals to produce energy. Morpheus, however,</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#matrix-botao" onclick="requisicao('tt0133093')" >Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#matrix">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BNzE1NjBiODAtNDVhNS00ZTI1LTg4ZjUtZTk3OWVhODljMjNjXkEyXkFqcGdeQXVyMzM4MjM0Nzg@._V1_SX300.jpg" class="card-img-top img-cards" alt="Pokémon">
+            <div class="card-body ">
+              <h5 class="card-title">POKÉMON - THE MOVIE </h5>
+              <p class="card-text alinhamento"> In Pokémon - The Movie 2000, while Ash, Misty and Tracey travel on a boat, Giraldan, a Pokémon pet collector, prepares his newest plan: to capture the rare Lugia. Therefore, it causes a climatic catastrophe when it attacks and removes the three sacred birds from its islands: Moltres, the fire-guard-bird; Zapdos, the bird-guard of thunder; and Articuno, the guardian bird of the ice. To avoid the complete collapse of the world they live in, the Pokémon and their trainers decide to unite to face Giraldan together.</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#pokemon-botao" onclick="requisicao('tt0210234')">Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#pokémon">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-" >
+          <img src="https://m.media-amazon.com/images/M/MV5BYTYxNGMyZTYtMjE3MS00MzNjLWFjNmYtMDk3N2FmM2JiM2M1XkEyXkFqcGdeQXVyNjY5NDU4NzI@._V1_SX300.jpg" class="card-img-top img-cards" alt="O Rei Leão">
+            <div class="card-body ">
+              <h5 class="card-title">THE LION KING</h5>
+              <p class="card-text alinhamento">A Disney classic, the animation follows Mufasa (voiced by James Earl Jones), the Lion King, and Queen Sarabi (voiced by Madge Sinclair), introducing the kingdom to the heir to the throne, Simba (voiced by Matthew Broderick). The newborn receives the blessing of the wise baboon Rafiki (voice of Robert Guillaume), but grows up involved in the antics of his uncle Scar (voice of Jeremy Irons), the envious and Machiavellian brother of Mufasa, who plans to get rid of the nephew and inherit the throne..</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#king-botao" onclick="requisicao('tt0110357')">Ver +</a>
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#reileao">Trailer</button>
+            </div>
+        </article><article class="card borda-cor cards p-0 m-4 col-16 col-m-8" >
+          <img src="https://m.media-amazon.com/images/M/MV5BZTk2ZmUwYmEtNTcwZS00YmMyLWFkYjMtNTRmZDA3YWExMjc2XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg" class="card-img-top img-cards" alt="JUMANJI">
+            <div class="card-body ">
+              <h5 class="card-title">JUMANJI</h5>
+              <p class="card-text alinhamento"> In 1869, two terrified boys bury a chest and, a hundred years later, a businessman's son discovers that inside it is a game called Jumanji. When he starts playing with a friend, he is soon penalized to stay in the woods until someone rolls a five or eight. As in the next move she is attacked by bats, due to her positioning on the board, the game is interrupted and he is immediately trapped inside Jumanji. But twenty-six years later, two children start playing and one ends up setting him free. However, the only way to leave everything as before is to finish the game, but for that it is necessary to find the participant in the 1969 game. chaos, because wild animals.</p>
+              <a href="#" class="btn  cor-botao" data-bs-toggle="modal" data-bs-target="#jumanji-botao" onclick="requisicao('tt0113497')">Ver +</a>
+
+              <button type="button" class="btn cor-botao" data-bs-toggle="modal" data-bs-target="#JUMANJI">Trailer</button>
+            </div>
+        </article>
+    </div>
+</section>
+<section class="model-trailer">
+<div class="modal fade" id="spirit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">THE INDOMITABLE CHARGER</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video" width="470" height="315" src="https://www.youtube.com/embed/vjtlYCNLu_U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="ironman" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Iron Man 3</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video"  width="470" height="315" src="https://www.youtube.com/embed/Ke1Y3P9D0Bc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="troy" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Troy</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe  id="video" width="470" height="315" src="https://www.youtube.com/embed/znTLzRJimeY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="wall" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Wall-e</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe  id="video" width="470" height="315" src="https://www.youtube.com/embed/CZ1CATNbXg0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="supernatural" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Supernatural</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video"  width="470" height="315" src="https://www.youtube.com/embed/apltEQy8RzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="evangelion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Evangelion</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe  id="video" width="470" height="315" src="https://www.youtube.com/embed/eg52STcRODM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="grinch" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Grinch</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video"  width="470" height="315" src="https://www.youtube.com/embed/DD0m9t4WHEQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="fauno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">PAN'S LABYRINTH</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video"  width="470" height="315" src="https://www.youtube.com/embed/AcHasH-nLhU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="matrix" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">The Matrix</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video"  width="470" height="315" src="https://www.youtube.com/embed/vKQi3bBA1y8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="pokémon" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Pokémon</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video" width="470" height="315" src="https://www.youtube.com/embed/HJx0HNj_KMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="reileao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">THE LION KING</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe  id="video" width="470" height="315" src="https://www.youtube.com/embed/rHiHRhbTv-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="JUMANJI" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Jumanji</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="video"  width="470" height="315" src="https://www.youtube.com/embed/eTjDsENDZ6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+</section>  
+<section class="model-informaçao">
+  <div class="modal fade" id="spirit-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="iron-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="troy-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="wall-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="super-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="evangelion-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="grinch-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="pan-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="matrix-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="pokemon-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="king-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="jumanji-botao" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Spirit: Stallion of the Cimarron</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h1 class="titulo"></h1>
+          <img class="capa" src="" alt="">
+          <h4>Ano</h4>
+          <p class="ano"></p>
+          <h4>Lançamento</h4>
+          <p class="lancamento"></p>
+          <h4>Duraçao</h4>
+          <p class="tempo"></p>
+          <h4>Genero</h4>
+          <p class="genero"></p>
+          <h4>Diretor</h4>
+          <p class="diretor"></p>
+          <h4>Escritor</h4>
+          <p class="escritor"></p>
+          <h4>Atores</h4>
+          <p class="ator"></p>
+          <h4>Sinopse</h4>
+          <p class="descrisao"></p>
+          <h4>Idioma</h4>
+          <p class="idioma"></p>
+          <h4>País</h4>
+          <p class="pais"></p>
+          <h4>Premiação</h4>
+          <p class="premios"></p>
+          <h4>Bilheteria</h4>
+          <p class="bilheteria"></p>
+          <h4>DVD</h4>
+          <p class="dvd"></p>
+        </div>
+        <div class="modal-footer">
+          <button  type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+  <footer class="text-center p-3" id="footerPrincipal">
+    <p class="m-0">Direitos Autoriais &copy;<br>Projected by Grupo 1 - Modulo 2<br>T11 - Resilia</p>
+</footer>
+    <script src="../src/js/main.js"></script>
+    <script src="../src/js/controller/homeController.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>
+
