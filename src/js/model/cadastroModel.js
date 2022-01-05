@@ -24,9 +24,9 @@ class CadastroModel {
 
 
 
-    verifiarSenha() {
+    verifiarSenha(senha, subsenha) {
 
-        if (senha == subsenha) {
+        if (senha == subsenha && senha != "" && subsenha !== "") {
             return true
         } else {
             return false
@@ -45,15 +45,6 @@ class CadastroModel {
         }
 
     }
-
-
-
-    validaFormulario() {
-
-        $('#formPessoal').submit()
-
-    }
-
 
 
 

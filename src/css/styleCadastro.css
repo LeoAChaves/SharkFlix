@@ -1,5 +1,12 @@
 header {
-    background-color: #9B9BFB;
+    background-color: lavender;
+
+}
+
+.slogan {
+    width: 50px;
+    height: 50px;
+
 }
 
 .cabecalho {
@@ -7,8 +14,16 @@ header {
 }
 
 .dados1 {
-    background-color: lavender;
+    background-color: #BB6AE0;
     padding: 2em;
+}
+
+.planos {
+    margin-top: 40px;
+}
+
+.invalido {
+    color: red;
 }
 
 #footerPrincipal {
@@ -21,6 +36,13 @@ header {
     margin-top: 40px;
 }
 
-.btn {
-    margin-left: 27%;
+.check {
+    margin-top: 13px;
+
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
