@@ -12,10 +12,46 @@ class CadastroModel {
             }).responseJSON;
 
             if (conexao.erro == true) {
-                alert("cep erraddo main")
+                $('#cepCorreto').text("CEP inválido!")
             } else {
+
+                $('#cepCorreto').text('')
                 return conexao
             }
         }
     }
+
+
+    verifiarSenha() {
+
+        if (senha == subsenha) {
+            return true
+        } else {
+            return false
+        }
+    }
+
+    verificarEmail(email) {
+
+        let arr = email.split("")
+        let tamanho = arr.filter((arroba) => arroba == "@").length
+
+        if (tamanho == 1) {
+            return true
+        } else {
+            return false
+        }
+
+    }
+
+
+
+    validaFormulario() {
+
+        $('#formPessoal').submit()
+
+    }
+
+
+
 }
