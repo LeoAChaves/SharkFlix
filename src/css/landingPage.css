@@ -16,7 +16,48 @@ main{
     width: 18rem;
 }
 
+
+.textAlign{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btnSignUp{
+    background-color: white;
+    color: black;
+    transition: 1s;
+}
+
+.btnSignUp:hover{
+    background-color: #8F0BDB;
+    color: white;
+}
+
+.bgColorGrid{
+    background-color: white;
+}
+
+.imgLanding{
+    width: 90px;
+    height: 90px;
+}
+
+.imgPlans{
+    width: 170px;
+    height: 170px;
+}
+
+
 .imgLogo{
     width: 300px;
     height:300px ;
+}
+
+.cardNew{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
 }
