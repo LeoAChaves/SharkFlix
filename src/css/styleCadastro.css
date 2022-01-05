@@ -1,13 +1,26 @@
+header {
+    background-color: #9B9BFB;
+}
+
 .cabecalho {
     z-index: initial;
 }
 
 .dados1 {
-    background-color: lightcoral;
+    background-color: lavender;
     padding: 2em;
 }
 
-.dados2 {
-    background-color: lightgreen;
-    padding: 2em;
+#footerPrincipal {
+    background-color: #590082;
+    color: white;
+    font-weight: bold;
+}
+
+.info {
+    margin-top: 40px;
+}
+
+.btn {
+    margin-left: 27%;
 }

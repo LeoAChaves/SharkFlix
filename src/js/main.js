@@ -1,2 +1,0 @@
-
-// const controller = new PesquisaController();

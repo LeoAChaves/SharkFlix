@@ -1,0 +1,32 @@
+body{
+    background-color: lavender;
+}
+.cor-fundo{
+    background-color: lavender;
+}
+.cor-logo{
+    color: #A10CF5 !important
+}
+header{
+    background-color: #9B9BFB;
+}
+.cor-botao{
+    background-color:#8F0BDB ;
+    color: white;
+}
+.principal{
+    background-color: lavender;
+}
+.none{
+    display: none;
+}
+
+#footerPrincipal{
+    background-color: #590082;
+    color: white;
+    font-weight: bold;
+  }
+  .cor-botao:hover{
+      background-color:  #590082;
+      color: white;
+  }
