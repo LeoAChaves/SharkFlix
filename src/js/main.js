@@ -1,6 +1,8 @@
 
 
 
+
+
 // $('#fechar').click(function() {
 //     $('#videoT').each(function(){ 
 //         let frame = document.getElementById("videoT");
@@ -70,5 +72,7 @@ $('.salvar').click((e)=>{
 // }
 
 // const controller = new PesquisaController();
+
+
 
 

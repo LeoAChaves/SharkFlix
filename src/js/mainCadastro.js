@@ -3,7 +3,6 @@ const chamarController = new CadastroController()
 $('#btn').click(function() {
 
 
-
     chamarController.conversarComModel($('#cep').val())
 
     chamarController.confereEmail($('#email').val())

@@ -23,6 +23,7 @@ class CadastroModel {
     }
 
 
+
     verifiarSenha(senha, subsenha) {
 
         if (senha == subsenha && senha != "" && subsenha !== "") {
