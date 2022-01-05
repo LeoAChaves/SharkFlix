@@ -21,7 +21,6 @@ class CadastroController {
 
         let resposta = conferir.verificarEmail(email)
 
-
         let emailView = new CadastroView()
 
         emailView.verEmail(resposta)
@@ -38,8 +37,8 @@ class CadastroController {
 
         senhaView.verSenha(pedir)
 
-
     }
+
 
 
 

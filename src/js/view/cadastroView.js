@@ -1,6 +1,5 @@
 class CadastroView {
 
-
     verEmail(resp) {
 
         if (resp == true) {
@@ -23,8 +22,6 @@ class CadastroView {
         }
     }
 
-
-
     mostrarDados(resposta) {
 
         $('#rua').val(resposta.logradouro)
@@ -33,5 +30,7 @@ class CadastroView {
         $('#estado').val(resposta.uf)
 
     }
+
+
 
 }

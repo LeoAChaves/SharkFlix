@@ -11,6 +11,10 @@ header {
     padding: 2em;
 }
 
+.planos {
+    margin-top: 40px;
+}
+
 .invalido {
     color: red;
 }
