@@ -1,5 +1,6 @@
 body{
     background-color: lavender;
+    
 }
 .cor-fundo{
     background-color: lavender;
@@ -14,8 +15,19 @@ header{
     background-color:#8F0BDB ;
     color: white;
 }
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
 .principal{
+    width: 90%;
     background-color: lavender;
+    display: block;
+    justify-content: center;
+    align-items: center;
 }
 .none{
     display: none;

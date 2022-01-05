@@ -24,6 +24,7 @@ function requisicao(id){
        })
    
 }
+requisicao(id)
 
 
 
