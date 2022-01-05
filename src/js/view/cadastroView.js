@@ -1,5 +1,27 @@
 class CadastroView {
 
+    verEmail(resp) {
+
+        if (resp == true) {
+            $('#emailCorreto').text("")
+        } else {
+            $('#emailCorreto').text("E-mail Incorreto!")
+        }
+
+    }
+
+    verSenha(resp) {
+
+        if (resp == true) {
+
+            $('#senhaCorreta').text("")
+
+        } else {
+
+            $('#senhaCorreta').text("A senha devem ser iguais!")
+        }
+    }
+
     mostrarDados(resposta) {
 
         $('#rua').val(resposta.logradouro)
@@ -8,6 +30,5 @@ class CadastroView {
         $('#estado').val(resposta.uf)
 
     }
-
 
 }

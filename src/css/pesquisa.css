@@ -1,5 +1,12 @@
-.background {
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: lavender;
+}
+.background {
+  background-color: #9b9bfb;
 }
 .text-white {
   color: white;
@@ -14,6 +21,42 @@ main {
   margin-top: 60px;
   width: 60%;
 }
+.resultado {
+  margin: 50px 0;
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* align-items: center; */
+  /* text-align: left; */
+}
+.resultado div {
+  border: 1px black solid;
+  border-radius: 2px;
+  padding: 5px;
+  /* text-align: center; */
+  margin: 20px;
+  width: 50%;
+}
+.resultado img {
+  float: left;
+  height: 200px;
+  margin-right: 30px;
+}
+.resultado h3,
+.resultado p {
+  font-size: smaller;
+}
 .none {
   display: none;
+}
+#footerPrincipal {
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+}
+@media (max-width: 400px) {
+  .barraDePesquisa span {
+    display: none;
+  }
 }
