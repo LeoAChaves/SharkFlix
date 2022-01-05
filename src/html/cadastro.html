@@ -10,138 +10,126 @@
 </head>
 
 <body>
-    <header class="fixed-top col-12 m-auto cabecalho">
-        <!-- col-11 da um espaço e o m-auto ja deixa no meio o da esquerda-->
-        <!-- esse da o cabeçalho responsivo -->
-        <!--A fixed-Top deixa o header fixo no topo-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <!--navbar-cor decidi a cor dos icones e a cor das letras -->
-            <div class="container-fluid col-11  m-auto">
-                <a class="navbar-brand text-warning" href="#">ResiliaFlix</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+
+    <header class="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav class="container-fluid">
+            <a class="navbar-brand" id="corLogo" href="#">ResiliaFlix</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active text-warning" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-warning" href="#">sobre</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active text-warning" href="#">contato</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Disabled</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            </button>
+
         </nav>
     </header>
-    <br><br><br>
 
-    <div class="row  fs-4 ">
-        <form class="dados1 d-flex justify-content-center">
-            <div class="form-group col-5 lh-lg">
-                <div class="d-flex justify-content-center">
-                    <p>Dados Pessoais: </p>
-                </div>
+    <div class="container">
+        <div class="row fs-4 d-flex justify-content-center">
 
-                <div class="form-group ">
+            <!-- //////////////////////////////////////////////////// Dados Pessoais ///////////////////////////////////////////-->
+            <form class="dados1 d-flex justify-content-center col-md-6 lh-lg" id="formPessoal">
+                <fieldset class="form-group">
+                    <div class="d-flex justify-content-center info">
+                        <p>Dados Pessoais: </p>
+                    </div>
 
-                    <label>Nome:</label>
-                    <input type="text" class="form-control" placeholder="Nome completo" required>
+                    <div class="form-group">
 
-                </div>
+                        <label>Nome:</label>
+                        <input type="text" class="form-control" placeholder="Nome completo" required maxlength="25" minlength="2">
 
-                <div class="form-group ">
+                    </div>
 
-                    <label>E-mail:</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="email@yahoo.com" required>
-                    <small id="emailHelp" class="form-text text-muted d-flex justify-content-center">O mesmo será usado para fazer login!</small>
+                    <div class="form-group">
 
-                </div>
+                        <label>E-mail:</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email@yahoo.com" required maxlength="40">
+                        <small id="emailCorreto" class="form-text text-muted d-flex justify-content-center"></small>
 
-                <div class="form-group ">
+                    </div>
 
-                    <label>RG:</label>
-                    <input type="text" class="form-control" placeholder="RG">
+                    <div class="form-group ">
 
-                </div>
+                        <label>RG:</label>
+                        <input type="text" class="form-control" placeholder="RG" required maxlength="10" minlength="8">
 
-                <div class="form-group ">
+                    </div>
 
-                    <label>Senha:</label>
-                    <input type="password" class="form-control" placeholder="Senha">
 
-                </div>
+                    <div class="form-group ">
 
-                <div class="form-group">
+                        <label>Senha:</label>
+                        <input type="password" class="form-control" placeholder="Senha" required maxlength="10" minlength="6">
 
-                    <label>Repita a Senha:</label>
-                    <input type="password" class="form-control" placeholder="Senha">
+                    </div>
 
-                </div>
 
-            </div>
+                    <div class="form-group">
 
-        </form>
-        <!--//////////////////////////////////////////////////// Dados de endereço ////////////////////////////////-->
-        <form class="dados2 d-flex justify-content-center">
+                        <label>Repita a Senha:</label>
+                        <input type="password" class="form-control" placeholder="Senha" required maxlength="10" minlength="6">
+                        <small id="senhaCorreta" class="form-text text-muted d-flex justify-content-center"></small>
 
-            <div class="form-row col-5 lh-lg">
+                    </div>
 
-                <div class="d-flex justify-content-center">
-                    <p> Informaçoes de endereço: </p>
-                </div>
+                    <!--//////////////////////////////////////////////////// Dados de endereço ////////////////////////////////-->
 
-                <div class="col">
-                    <label>CEP:</label>
-                    <input type="text" class="form-control" id="cep" placeholder="CEP">
-                </div>
+                    <div class="d-flex justify-content-center info">
+                        <p> Informações de endereço: </p>
+                    </div>
 
-                <div class="col">
-                    <label>Endereço:</label>
-                    <input type="text" class="form-control" id="rua" placeholder="Rua/Av">
-                </div>
 
-                <div class="col">
-                    <label>Bairro:</label>
-                    <input type="text" class="form-control" id="bairro" placeholder="Bairro">
-                </div>
+                    <div>
+                        <label>CEP:</label>
+                        <input type="text" class="form-control" id="cep" placeholder="CEP" required maxlength="8" minlength="4">
+                        <small id="cepCorreto" class="form-text text-muted d-flex justify-content-center"></small>
+                    </div>
 
-                <div class="col">
-                    <label>Cidade:</label>
-                    <input type="text" class="form-control" id="cidade" placeholder="Cidade">
-                </div>
+                    <div>
+                        <label>Endereço:</label>
+                        <input type="text" class="form-control" id="rua" placeholder="Rua/Av" required>
+                    </div>
 
-                <div class="col">
-                    <label>Estado:</label>
-                    <input type="text" class="form-control" id="estado" placeholder="Estado">
-                </div>
+                    <div>
+                        <label>Bairro:</label>
+                        <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
+                    </div>
 
-                <div class="col">
-                    <label>Número:</label>
-                    <input type="number" class="form-control" placeholder="numero">
-                </div>
+                    <div>
+                        <label>Cidade:</label>
+                        <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
+                    </div>
 
-                <div class="col">
-                    <label>Complemento:</label>
-                    <input type="text" class="form-control" placeholder="Casa/AP/Bloco">
-                </div>
+                    <div>
+                        <label>Estado:</label>
+                        <input type="text" class="form-control" id="estado" placeholder="Estado" required>
+                    </div>
 
-                <small class="form-text text-muted d-flex justify-content-center"> <br>Ao clicar em cadastrar você concorda com os termos!</small>
+                    <div>
+                        <label>Número:</label>
+                        <input type="number" class="form-control" placeholder="numero" required min="1" max="9000">
+                    </div>
 
-                <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary" id="btn">Cadastrar</button>
-                </div>
-            </div>
+                    <div>
+                        <label>Complemento:</label>
+                        <input type="text" class="form-control" placeholder="Casa/AP/Bloco" required maxlength="15" minlength="2">
+                    </div>
 
-        </form>
+
+                    <small class="form-text text-muted d-flex justify-content-center"> <br>Ao clicar em cadastrar você concorda com os termos!</small>
+
+                    <div class="btn">
+                        <button type="submit" class="btn btn-primary" id="btn">Cadastrar</button>
+                    </div>
+                </fieldset>
+
+            </form>
+
+
+        </div>
 
     </div>
+    <footer class="text-center p-3" id="footerPrincipal">
+        <p class="m-0">Direitos Autoriais &copy;<br>Projected by Grupo 1 - Modulo 2<br>T11 - Resilia</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
