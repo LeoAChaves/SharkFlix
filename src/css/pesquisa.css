@@ -27,8 +27,10 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .resultado div {
+  text-align: center;
   margin: 20px;
 }
 .resultado img {
