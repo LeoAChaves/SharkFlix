@@ -50,8 +50,7 @@ header{
 }
 
 .img-cards{
-    object-fit: cover;
-    height: 200px;
+    height: 400px;
 }
 .cor-botao{
     background-color:#8F0BDB ;
