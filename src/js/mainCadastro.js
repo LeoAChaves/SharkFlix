@@ -8,12 +8,13 @@ $('#btn').click(function(e) {
 
     chamarController.confereEmail($('#email').val())
 
+    chamarController.confereSenha($('#senha').val(), $('#subSenha').val())
+
 })
 
 $('#formPessoal').submit(() => {
 
     alert("tentou enviar")
-
 
 
 })

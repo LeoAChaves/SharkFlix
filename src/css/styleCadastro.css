@@ -1,5 +1,5 @@
 header {
-    background-color: #9B9BFB;
+    background-color: lavender;
 }
 
 .cabecalho {
@@ -7,8 +7,12 @@ header {
 }
 
 .dados1 {
-    background-color: lavender;
+    background-color: #BB6AE0;
     padding: 2em;
+}
+
+.invalido {
+    color: red;
 }
 
 #footerPrincipal {
@@ -19,8 +23,4 @@ header {
 
 .info {
     margin-top: 40px;
-}
-
-.btn {
-    margin-left: 27%;
 }

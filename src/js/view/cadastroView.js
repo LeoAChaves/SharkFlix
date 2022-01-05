@@ -3,8 +3,24 @@ class CadastroView {
 
     verEmail(resp) {
 
-        $('#emailCorreto')
+        if (resp == true) {
+            $('#emailCorreto').text("")
+        } else {
+            $('#emailCorreto').text("E-mail Incorreto!")
+        }
 
+    }
+
+    verSenha(resp) {
+
+        if (resp == true) {
+
+            $('#senhaCorreta').text("")
+
+        } else {
+
+            $('#senhaCorreta').text("A senha devem ser iguais!")
+        }
     }
 
 
