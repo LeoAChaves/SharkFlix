@@ -7,7 +7,9 @@ class CadastroController {
 
         let dados = new CadastroModel() // conversando com o irmão cadastroModel
 
-        var preencher = dados.conexaoCep(buscarCEP) // vai me retornar 1 para quando o cep nn existir ou retorna um obj com os campos
+
+        let preencher = dados.conexaoCep(buscarCEP) // vai me retornar 1 para quando o cep nn existir ou retorna um obj com os campos
+
 
         let complementos = new CadastroView() // Conversando com o irmão cadastroView
 
@@ -21,12 +23,24 @@ class CadastroController {
 
         let resposta = conferir.verificarEmail(email)
 
-
         let emailView = new CadastroView()
 
         emailView.verEmail(resposta)
 
     }
+
+    confereSenha(senha, subsenha) {
+
+        let conferirSenha = new CadastroModel()
+
+        let pedir = conferirSenha.verifiarSenha(senha, subsenha)
+
+        let senhaView = new CadastroView()
+
+        senhaView.verSenha(pedir)
+
+    }
+
 
 
 
