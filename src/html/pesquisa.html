@@ -13,46 +13,10 @@
     />
     <link rel="stylesheet" href="../css/pesquisa.css" />
   </head>
-  <body class="">
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Resiliaflix</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">Formulário de log in/sign in</div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Sign in
-            </button>
-            <button type="button" class="btn btn-primary">Log in</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <header class="yellow-background">
+  <body>
+    <header class="background">
       <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand text-dark" href="#">Resiliaflix</a>
+        <a class="navbar-brand text-dark" href="#">SharkFlix</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -68,41 +32,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link text-dark" href="#">Home</a>
+              <a class="nav-link text-dark" href="../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-dark" href="#"
-                >Pesquisar<span class="sr-only">(current)</span></a
-              >
+              <a class="nav-link text-dark">Pesquisar</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-dark"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                Sobre
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Contato</a>
-                <a class="dropdown-item" href="#">Resilia</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Saiba mais</a>
-              </div>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="../html/contato.html">Contato</a>
             </li>
           </ul>
-          <button
-            type="button"
-            class="hover-yellow text-white btn bg-dark"
-            data-toggle="modal"
-            data-target="#exampleModal"
+          <a
+            class="text-white btn bg-dark"
+            href="../html/login.html"
           >
-            Log in/Sign in
-          </button>
+            Login
+          </a>
         </div>
       </nav>
     </header>
@@ -120,53 +64,48 @@
             <option value="2">Ano</option>
           </select>
         </div>
-        <div class="input-group mb-3 none">
+        <div class="input-group mb-3 barraDePesquisa">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="basic-addon1">@</span>
+            <span class="input-group-text" id="basic-addon1">&#128269</span>
           </div>
           <input
             type="text"
-            class="form-control pesquisa-titulo none"
-            placeholder="Batman ..."
+            class="form-control pesquisa-titulo "
+            placeholder="Título"
             aria-describedby="basic-addon1"
           />
           <input
             type="number"
-            class="form-control pesquisa-ano none"
+            class="form-control pesquisa-ano "
             min="1900"
             max="2099"
-            value="2012"
+            placeholder="Ano"
             step="1"
             aria-describedby="basic-addon1"
           />
           <div class="input-group-append">
-            <button class="btn btn-outline-secondary bg-dark" type="button">
+            <button class="btn btn-outline-secondary bg-dark pesquisar" type="button">
               Pesquisar
             </button>
           </div>
         </div>
       </form>
-      <!-- <section class="resultado">
-        <p class="text-danger none">Lamento, nada foi encontrado. &#129301</p>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          </div>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Cras justo odio</li>
-          </ul>
-        </div>
-      </section> -->
+      <p class="text-danger nadaEncontrado">Lamento, nada foi encontrado. &#129301</p>
+      <section class="resultado">
+      </section>
     </main>
-    <footer></footer>
+    <footer class="text-center p-3" id="footerPrincipal">
+      <p class="m-0">Direitos Autoriais &copy;<br>Projected by Grupo 1 - Modulo 2<br>T11 - Resilia</p>
+</footer>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
       crossorigin="anonymous"
     ></script>
-    <script src=""></script>
+    <script src="../js/controller/pesquisaController.js"></script>
+    <script src="../js/model/pesquisaModel.js"></script>
+    <script src="../js/view/pesquisaView.js"></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
