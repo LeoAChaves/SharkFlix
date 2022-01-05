@@ -1,5 +1,6 @@
 const metodoPesquisa = $(".metodo-pesquisa");
 const pesquisar = $(".pesquisar");
+
 function requisicao() {
   $(".resultado").html("");
   const titulo = $(".pesquisa-titulo").val();
@@ -30,3 +31,11 @@ function requisicao() {
   });
 }
 pesquisar.click(requisicao);
+
+$(".pesquisa-titulo").keypress(function (e) {
+  var key = e.which;
+  if (key == 13) {
+    $("input[name = butAssignProd]").click();
+    return false;
+  }
+});
