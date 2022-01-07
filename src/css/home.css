@@ -1,5 +1,8 @@
 body {
   background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .cor-fundo {
   background-color: lavender;
