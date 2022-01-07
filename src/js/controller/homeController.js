@@ -20,4 +20,9 @@ function requisicao(id) {
     },
   });
 }
-requisicao(id);
+requisicao(id)
+
+
+
+
+
