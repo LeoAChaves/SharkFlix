@@ -1,20 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-    box-sizing: border-box;
-    background-color: #590082;
+  box-sizing: border-box;
+  background-color: #590082;
 }
-
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  background-color: #9b9bfb;
 }
 
-header{
-  background-color: #9B9BFB;
-  }
-  
-input[type=email], 
-input[type=password] {
+input[type="email"],
+input[type="password"] {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
@@ -23,8 +21,8 @@ input[type=password] {
   background: #f1f1f1;
 }
 
-input[type=email]:focus, 
-input[type=password]:focus {
+input[type="email"]:focus,
+input[type="password"]:focus {
   background-color: #ddd;
   outline: none;
 }
@@ -46,7 +44,7 @@ button {
 }
 
 button:hover {
-  opacity:1;
+  opacity: 1;
 }
 
 .cancelbtn {
@@ -54,7 +52,8 @@ button:hover {
   background-color: #1b1817;
 }
 
-.cancelbtn, .salvar {
+.cancelbtn,
+.salvar {
   float: left;
   width: 50%;
 }
@@ -63,21 +62,21 @@ button:hover {
   padding: 15px;
 }
 
-
 .clearfix::after {
   content: "";
   clear: both;
   display: table;
 }
 
-#footerPrincipal{
+#footerPrincipal {
   background-color: #590082;
   color: white;
   font-weight: bold;
 }
 
 @media screen and (max-width: 300px) {
-  .cancelbtn, .salvar {
-     width: 100%;
+  .cancelbtn,
+  .salvar {
+    width: 100%;
   }
 }
