@@ -11,72 +11,49 @@
 </head>
 
 <body>
-
     <header class="navbar navbar-expand-lg navbar-light fixed-top">
         <nav class="container-fluid">
-
-
             <img class="slogan" src="../assets/imgIcon/sharkflixLogo.png" alt="slongan SharkFlix">
-
-            <!--  <a class="navbar-brand" id="corLogo" href="#"> SharkFlix</a> -->
-
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#navbarSupportedContent" 
+            aria-controls="navbarSupportedContent" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
             </button>
-
         </nav>
     </header>
-
-    <div class="container">
+    
+    <main class="container">
         <div class="row fs-4 d-flex justify-content-center">
-
-            <!-- //////////////////////////////////////////////////// Dados Pessoais ///////////////////////////////////////////-->
             <form class="dados1 d-flex justify-content-center col-md-6 lh-lg" id="formPessoal">
                 <fieldset class="form-group">
                     <div class="d-flex justify-content-center info">
                         <p>Dados Pessoais: </p>
                     </div>
-
                     <div class="form-group">
-
                         <label>Nome:</label>
                         <input type="text" class="form-control" placeholder="Nome completo" required maxlength="25" minlength="2">
-
                     </div>
-
                     <div class="form-group">
-
                         <label>E-mail:</label>
                         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="email@yahoo.com" required maxlength="40">
                         <small id="emailCorreto" class="invalido d-flex justify-content-center"></small>
-
                     </div>
-
                     <div class="form-group ">
-
                         <label>RG:</label>
                         <input type="text" class="form-control" placeholder="RG" required maxlength="10" minlength="8">
-
                     </div>
-
-
                     <div class="form-group ">
-
                         <label>Senha:</label>
                         <input type="password" class="form-control" id="senha" placeholder="Senha" required maxlength="10" minlength="6">
-
                     </div>
-
-
                     <div class="form-group">
-
                         <label>Repita a Senha:</label>
                         <input type="password" class="form-control" placeholder="Senha" id="subSenha" required maxlength="10" minlength="6">
                         <small id="senhaCorreta" class="invalido d-flex justify-content-center"></small>
-
                     </div>
-
                     <div class="planos">
 
 
@@ -89,18 +66,12 @@
                             <option value="3">Shark</option>
 
                           </select required>
-
                     </div>
-
-                    <!--//////////////////////////////////////////////////// Dados de endereço ////////////////////////////////-->
-
                     <div class="d-flex justify-content-center info">
 
                         <p> Informações de endereço: </p>
 
                     </div>
-
-
                     <div>
                         <label>CEP:</label>
 
@@ -110,59 +81,47 @@
 
 
                     </div>
-
                     <div>
 
                         <label>Endereço:</label>
                         <input type="text" class="form-control" id="rua" placeholder="Rua/Av" required>
 
                     </div>
-
                     <div>
 
                         <label>Bairro:</label>
                         <input type="text" class="form-control" id="bairro" placeholder="Bairro" required>
 
                     </div>
-
                     <div>
 
                         <label>Cidade:</label>
                         <input type="text" class="form-control" id="cidade" placeholder="Cidade" required>
 
                     </div>
-
                     <div>
 
                         <label>Estado:</label>
                         <input type="text" class="form-control" id="estado" placeholder="Estado" required>
 
                     </div>
-
                     <div>
 
                         <label>Número:</label>
                         <input type="number" class="form-control" placeholder="numero" required min="0" max="9000">
-
                     </div>
-
                     <div>
 
                         <label>Complemento:</label>
                         <input type="text" class="form-control" placeholder="Casa/AP/Bloco" required maxlength="15" minlength="2">
 
                     </div>
-
                     <div class="form-check">
-
                         <input class="form-check-input check" type="checkbox" id="defaultCheck1">
                         <label class="form-check-label" for="defaultCheck1">
-
                              Li e concorco com os termos de uso!
                         </label>
-
                     </div>
-
                     <div class= "d-flex justify-content-center ">
 
                         <button type="submit" class=" btn btn-primary" id="btn">cadastrar</button>
@@ -170,14 +129,9 @@
                     </div>
 
                 </fieldset>
-
             </form>
-
-
-
         </div>
-
-    </div>
+    </main>
 
     <footer class="text-center p-3" id="footerPrincipal">
 
