@@ -1,5 +1,5 @@
 async function requisicaoInfoFilmes(id) {
   return await $.ajax({
-    url: "http://www.omdbapi.com/?i=" + id + "&apikey=3168fe11",
+    url: "https://www.omdbapi.com/?i=" + id + "&apikey=3168fe11",
   });
 }
