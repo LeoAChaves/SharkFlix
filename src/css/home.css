@@ -4,11 +4,11 @@ body {
 .cor-fundo {
   background-color: lavender;
 }
-.cor-logo {
-  color: #a10cf5 !important;
-}
 header {
   background-color: #9b9bfb;
+}
+.text-white {
+  color: white;
 }
 .logo {
   width: 50px;
@@ -62,10 +62,10 @@ header {
   color: white;
   font-weight: bold;
 }
-.cor-botao:hover {
+/* .cor-botao:hover {
   background-color: #590082;
   color: white;
-}
+} */
 @media (max-width: 430px) {
   .imagen,
   .imagen-pirata,
