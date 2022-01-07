@@ -16,6 +16,26 @@ main{
     width: 18rem;
 }
 
+.alinharBotao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.botaoCSS{
+    text-decoration: none;
+    font-size: 100px;
+    padding: 5px 50px;
+    color: black;
+    transition: 1s;
+}
+
+.botaoCSS:hover{
+    color: white;
+}
+
 
 .textAlign{
     display: flex;
@@ -23,14 +43,29 @@ main{
     justify-content: center;
 }
 
+.neonText {
+    color: #fff;
+    text-shadow:
+        0 0 3px #fff,
+        0 0 5px #fff,
+        0 0 10px #fff,
+        0 0 21px #0fa,
+        0 0 41px #0fa,
+        0 0 46px #0fa,
+        0 0 51px #0fa,
+        0 0 76px #0fa;
+  }
+
 .btnSignUp{
-    background-color: white;
-    color: black;
+    background-color: #5800DB;
     transition: 1s;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 5px 5px black;;
 }
 
 .btnSignUp:hover{
-    background-color: #8F0BDB;
+    background-color: #19055C;
     color: white;
 }
 

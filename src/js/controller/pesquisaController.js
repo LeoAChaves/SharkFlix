@@ -1,13 +1,3 @@
-// class PesquisaController {
-//   pegarFilmes(titulo) {
-//     const model = new PesquisaModel();
-//     const teste = model.primeiraRequisicao(titulo);
-//     console.log(teste);
-//     // console.log(model);
-//     const view = new PesquisaView();
-//   }
-// }
-
 const metodoPesquisa = $(".metodo-pesquisa");
 const pesquisar = $(".pesquisar");
 
@@ -21,6 +11,7 @@ function requisicao() {
       if (result.Search == undefined) {
         $(".nadaEncontrado").removeClass("none");
       } else {
+        console.log(result);
         result.Search.forEach((filme) => {
           $.ajax({
             url:

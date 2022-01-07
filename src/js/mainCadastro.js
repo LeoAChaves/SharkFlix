@@ -1,18 +1,21 @@
 const chamarController = new CadastroController()
 
-$('#btn').click(function(e) {
+$('#btn').click(function() {
 
-    //  e.preventDefault()
 
     chamarController.conversarComModel($('#cep').val())
 
     chamarController.confereEmail($('#email').val())
 
+    chamarController.confereSenha($('#senha').val(), $('#subSenha').val())
+
+
+
 })
 
-$('#formPessoal').submit(() => {
+$('#formPessoal').submit((e) => {
 
-    alert("tentou enviar")
-
+    e.preventDefault()
+    location.replace((url = "../html/login.html"))
 
 })

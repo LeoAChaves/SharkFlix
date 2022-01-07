@@ -11,6 +11,10 @@ body{
 header{
     background-color: #9B9BFB;
 }
+.logo{
+    width: 50px;
+    height: 50px;
+}
 .imagen{
     height: 400px;
     object-fit: cover;
@@ -50,8 +54,7 @@ header{
 }
 
 .img-cards{
-    object-fit: cover;
-    height: 200px;
+    height: 400px;
 }
 .cor-botao{
     background-color:#8F0BDB ;
@@ -72,6 +75,7 @@ header{
         height: 200px;
         object-position: 0 10px;
     }
+
  }
 @media(max-width:380px){
     .imagen, .imagen-pirata ,.imagen-mad, .imagen-aco{
@@ -90,11 +94,17 @@ header{
         width: 370px;
         height: 400px;
     }
+    .capa{
+        width: 370px;
+    }
  }
 @media(max-width:380px){
     #video{
         width: 330px;
         height: 300px;
+    }
+    .capa{
+        width: 320px;
     }
  }
 @media(max-width:320px){
@@ -102,3 +112,7 @@ header{
         width: 275px;
         height: 300px;
     }
+    .capa{
+        width: 270px;
+    }
+}
