@@ -13,6 +13,9 @@ class CapaController {
   }
 
 }
+
+requisicao(id)
+
 document.querySelector('#formulario').addEventListener("submit",(event)=>{event.preventDefault()});
 
 
@@ -60,6 +63,7 @@ document.querySelector('#formulario').addEventListener("submit",(event)=>{event.
 //   });
 // }
 // requisicao(id)
+
 
 
 

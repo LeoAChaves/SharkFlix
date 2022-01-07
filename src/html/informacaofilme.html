@@ -10,9 +10,10 @@
     <title>Informação Filmes</title>
 </head>
 <body>
-  <header class="navbar navbar-expand-lg navbar-light fixed-top">
+  <header class="navbar navbar-expand-lg navbar-light mb-4">
     <nav class="container-fluid">
-    <img src="./assets/imgIcon/sharkflixLogo.png" class="logo" alt="logo">
+    <img src="../assets/imgIcon/sharkflixLogo.png" class="logo" alt="logo">
+
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,7 +34,7 @@
     </header>
 <main >
   <div class="principal" >
-    <h1 class="titulo"></h1>
+    <!-- <h1 class="titulo"></h1>
           <img class="capa" src="" alt="">
           <h4>Ano</h4>
           <p class="ano"></p>
@@ -58,9 +59,10 @@
           <h4>Premiação</h4>
           <p class="premios"></p>
           <h4>Bilheteria</h4>
-          <p class="bilheteria"></p>
+          <p class="bilheteria"></p> -->
         
   </div>
+  <div class="secundaria"></div>
 </main>
   <footer class="text-center p-3" id="footerPrincipal">
     <p class="m-0">Direitos Autoriais &copy;<br>Projected by Grupo 1 - Modulo 2<br>T11 - Resilia</p>
@@ -71,6 +73,6 @@
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="../js/controller/homeController.js"></script>
 <script src="../src/js/main.js"></script>
-<script>requisicao('tt0166813')</script>
+<script>CapaController.buscaFilmeImg('Spider-Man')</script>
 </body>
 </html>
