@@ -1,16 +1,26 @@
+// class PesquisaController {
+//   pegarFilmes(titulo) {
+//     const model = new PesquisaModel();
+//     const teste = model.primeiraRequisicao(titulo);
+//     console.log(teste);
+//     // console.log(model);
+//     const view = new PesquisaView();
+//   }
+// }
+
 const metodoPesquisa = $(".metodo-pesquisa");
 const pesquisar = $(".pesquisar");
 
 function requisicao() {
   $(".resultado").html("");
   const titulo = $(".pesquisa-titulo").val();
+
   $.ajax({
     url: "https://www.omdbapi.com/?s=" + titulo + "&apikey=3168fe11",
     success: function (result) {
       if (result.Search == undefined) {
         $(".nadaEncontrado").removeClass("none");
       } else {
-        console.log(result);
         result.Search.forEach((filme) => {
           $.ajax({
             url:
