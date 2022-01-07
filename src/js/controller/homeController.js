@@ -20,10 +20,7 @@ function requisicao(id) {
     },
   });
 }
-requisicao(id)
-
-
-
-
-
-
+requisicao(id);
+function redirecionarPagina(id) {
+  window.location.href = `./html/informacaofilme.html?i=${id}`;
+}
