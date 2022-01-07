@@ -1,26 +1,37 @@
 header {
-    background-color: #9B9BFB;
+  background-color: lavender;
 }
-
+.slogan {
+  width: 50px;
+  height: 50px;
+}
 .cabecalho {
-    z-index: initial;
+  z-index: initial;
 }
-
 .dados1 {
-    background-color: lavender;
-    padding: 2em;
+  background-color: #bb6ae0;
+  padding: 2em;
 }
-
+.planos {
+  margin-top: 40px;
+}
+.invalido {
+  color: red;
+}
 #footerPrincipal {
-    background-color: #590082;
-    color: white;
-    font-weight: bold;
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
 }
-
 .info {
-    margin-top: 40px;
+  margin-top: 40px;
+}
+.check {
+  margin-top: 13px;
 }
 
-.btn {
-    margin-left: 27%;
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
