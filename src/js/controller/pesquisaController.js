@@ -1,5 +1,5 @@
-const metodoPesquisa = $(".metodo-pesquisa");
 const pesquisar = $(".pesquisar");
+$(".nadaEncontrado").addClass("none");
 
 function requisicao() {
   $(".resultado").html("");
