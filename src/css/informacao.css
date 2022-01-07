@@ -23,11 +23,16 @@ main {
   height: 100%;
   display: flex;
   justify-content: center;
-  justify-content: center;
 }
 .principal {
   width: 90%;
   background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo_capa {
   display: flex;
   justify-content: center;
   align-items: center;
