@@ -1,118 +1,122 @@
-
-body{
-    background-color: lavender;
+body {
+  background-color: lavender;
 }
-.cor-fundo{
-    background-color: lavender;
+.cor-fundo {
+  background-color: lavender;
 }
-.cor-logo{
-    color: #A10CF5 !important
+.cor-logo {
+  color: #a10cf5 !important;
 }
-header{
-    background-color: #9B9BFB;
+header {
+  background-color: #9b9bfb;
 }
-.logo{
-    width: 50px;
-    height: 50px;
+.logo {
+  width: 50px;
+  height: 50px;
 }
-.imagen{
-    height: 400px;
-    object-fit: cover;
-    object-position: 0 3px;
+.imagen {
+  height: 400px;
+  object-fit: cover;
+  object-position: 0 3px;
 }
-.imagen-aco{
-    height: 400px;
-    object-fit: cover;
-    object-position: 0 20%;
+.imagen-aco {
+  height: 400px;
+  object-fit: cover;
+  object-position: 0 20%;
 }
-.imagen-pirata{
-    height: 400px;
-    object-fit: cover;
-    object-position: 0 40%;
+.imagen-pirata {
+  height: 400px;
+  object-fit: cover;
+  object-position: 0 40%;
 }
-.imagen-mad{
-    height: 400px;
-    object-fit: cover;
-    object-position: 0 20%;
+.imagen-mad {
+  height: 400px;
+  object-fit: cover;
+  object-position: 0 20%;
 }
 .carousel-indicators button {
-    width: 10px !important;
-    height: 10px !important;
-    border-radius: 50%;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
 }
-
-.cards{
-    max-width: 18rem;
-    box-sizing: border-box;
+.cards {
+  max-width: 18rem;
+  box-sizing: border-box;
 }
-.alinhamento{
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    display: -webkit-box;
-    -webkit-line-clamp: 4; 
-    -webkit-box-orient: vertical;
+.alinhamento {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
 }
-
-.img-cards{
+.img-cards {
+  height: 400px;
+}
+.cor-botao {
+  background-color: #8f0bdb;
+  color: white;
+}
+#footerPrincipal {
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+}
+.cor-botao:hover {
+  background-color: #590082;
+  color: white;
+}
+@media (max-width: 430px) {
+  .imagen,
+  .imagen-pirata,
+  .imagen-mad,
+  .imagen-aco {
+    height: 200px;
+    object-position: 0 10px;
+  }
+}
+@media (max-width: 380px) {
+  .imagen,
+  .imagen-pirata,
+  .imagen-mad,
+  .imagen-aco {
+    height: 200px;
+    object-position: 0 10px;
+  }
+}
+@media (max-width: 320px) {
+  .imagen,
+  .imagen-pirata,
+  .imagen-mad,
+  .imagen-aco {
+    height: 200px;
+    object-position: 0 10px;
+  }
+}
+@media (max-width: 425px) {
+  #video {
+    width: 370px;
     height: 400px;
-}
-.cor-botao{
-    background-color:#8F0BDB ;
-    color: white;
-
-}
-#footerPrincipal{
-    background-color: #590082;
-    color: white;
-    font-weight: bold;
   }
-  .cor-botao:hover{
-      background-color:  #590082;
-      color: white;
+  .capa {
+    width: 370px;
   }
-@media(max-width:430px){
-    .imagen, .imagen-pirata ,.imagen-mad, .imagen-aco{
-        height: 200px;
-        object-position: 0 10px;
-    }
-
- }
-@media(max-width:380px){
-    .imagen, .imagen-pirata ,.imagen-mad, .imagen-aco{
-        height: 200px;
-        object-position: 0 10px;
-    }
- }
-@media(max-width:320px){
-   .imagen, .imagen-pirata ,.imagen-mad,.imagen-aco{
-       height: 200px;
-       object-position: 0 10px;
-   }
 }
-@media(max-width:425px){
-    #video{
-        width: 370px;
-        height: 400px;
-    }
-    .capa{
-        width: 370px;
-    }
- }
-@media(max-width:380px){
-    #video{
-        width: 330px;
-        height: 300px;
-    }
-    .capa{
-        width: 320px;
-    }
- }
-@media(max-width:320px){
-    #video{
-        width: 275px;
-        height: 300px;
-    }
-    .capa{
-        width: 270px;
-    }
+@media (max-width: 380px) {
+  #video {
+    width: 330px;
+    height: 300px;
+  }
+  .capa {
+    width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  #video {
+    width: 275px;
+    height: 300px;
+  }
+  .capa {
+    width: 270px;
+  }
 }
