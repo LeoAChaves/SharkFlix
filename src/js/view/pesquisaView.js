@@ -1,1 +1,0 @@
-$(".nadaEncontrado").addClass("none");
