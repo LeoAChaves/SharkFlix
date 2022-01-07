@@ -1,48 +1,47 @@
-body{
-    background-color: lavender;
-    
+body {
+  background-color: lavender;
 }
-.cor-fundo{
-    background-color: lavender;
+.cor-fundo {
+  background-color: lavender;
 }
-.cor-logo{
-    color: #A10CF5 !important
+.cor-logo {
+  color: #a10cf5 !important;
 }
-header{
-    background-color: #9B9BFB;
+header {
+  background-color: #9b9bfb;
 }
 .logo {
-    width: 50px;
-    height: 50px;
-  }
-.cor-botao{
-    background-color:#8F0BDB ;
-    color: white;
+  width: 50px;
+  height: 50px;
 }
-main{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    justify-content: center;
+.cor-botao {
+  background-color: #8f0bdb;
+  color: white;
 }
-.principal{
-    width: 90%;
-    background-color: lavender;
-    display: block;
-    justify-content: center;
-    align-items: center;
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
 }
-.none{
-    display: none;
+.principal {
+  width: 90%;
+  background-color: lavender;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.none {
+  display: none;
 }
 
-#footerPrincipal{
-    background-color: #590082;
-    color: white;
-    font-weight: bold;
-  }
-  .cor-botao:hover{
-      background-color:  #590082;
-      color: white;
-  }
+#footerPrincipal {
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+}
+.cor-botao:hover {
+  background-color: #590082;
+  color: white;
+}
