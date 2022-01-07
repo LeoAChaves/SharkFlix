@@ -3,7 +3,7 @@
 <html lang="pt-br">
   <head>
     <meta charset="utf-8" />
-    <title>Login - ResiliaFlix</title>
+    <title>Login - SharkFlix</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link
       rel="shortcut icon"
@@ -42,15 +42,21 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" id="corLink" aria-current="page" href="#"
+              <a
+                class="nav-link"
+                id="corLink"
+                aria-current="page"
+                href="../index.html"
                 >Home</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="corLink" href="#">Pesquisar</a>
+              <a class="nav-link" id="corLink" href="./pesquisa.html"
+                >Pesquisar</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Contato</a>
+              <a class="nav-link active" href="./contato.html">Contato</a>
             </li>
           </ul>
         </div>
@@ -59,22 +65,22 @@
     <main>
       <section class="bloco-principal">
         <div class="alinhar-centro">
-          <form action="" method="get" class="formulario">
+          <form class="formulario">
             <div class="imgcontainer">
               <box-icon name="user-circle" class="img"></box-icon>
             </div>
-
             <div class="container">
-              <label for="email"><b>Email do Usuário:</b></label>
+              <label for="email"><b>Email</b></label>
               <input
                 type="email"
-                placeholder="Digite seu Email"
+                placeholder="Enter Email"
                 name="email"
                 id="email"
                 required
+                minlength="6"
+                maxlength="50"
               />
-
-              <label for="pass"><b>Senha</b></label>
+              <label for="pass"><b>Password</b></label>
               <input
                 type="password"
                 placeholder="Enter Password"
@@ -82,20 +88,18 @@
                 id="pass"
                 required
               />
-
-              <button type="submit" onclick="validar()">Login</button>
+              <button type="submit" class="login">Login</button>
               <label>
                 <input type="checkbox" checked="checked" name="remember" />
                 Relembrar Senha
               </label>
-            </div>
-
-            <div class="botoes">
-              <button type="button" class="cancelbtn">Cancel</button>
               <span class="pass"
-                ><a href="./recuperar-senha.html">Recuperar Senha?</a></span
+                ><a href="../html/recuperar-senha.html"
+                  >Recuperar Senha?</a
+                ></span
               >
             </div>
+            <p class="textorecupera"></p>
           </form>
         </div>
       </section>
@@ -106,7 +110,6 @@
         - Resilia
       </p>
     </footer>
-    <script src="../js/main.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
@@ -117,6 +120,8 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
