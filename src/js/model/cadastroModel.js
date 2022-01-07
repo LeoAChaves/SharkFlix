@@ -4,7 +4,7 @@ class CadastroModel {
 
         if (cep.length == 8) {
 
-            var conexao = $.ajax({
+            let conexao = $.ajax({
                 dataType: "json",
                 url: `https://viacep.com.br/ws/${cep}/json/`,
                 async: false,
@@ -21,8 +21,6 @@ class CadastroModel {
             }
         }
     }
-
-
 
     verifiarSenha(senha, subsenha) {
 
@@ -45,7 +43,5 @@ class CadastroModel {
         }
 
     }
-
-
 
 }
