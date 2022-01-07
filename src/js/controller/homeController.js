@@ -5,21 +5,10 @@ class CapaController {
           let model = new PesquisaModel();
           model.fazRequest(filme,() => {let view = new PesquisaView(); view.update(model)});
       }
-  }
-  static paginaDePesquisa(){
-      localStorage.setItem('novoFilme', document.getElementById("nomeFilme").value);
-      location.href="../../html/informacaofilme.html";
-  }
-  static pegaFilme(){
-      localStorage.setItem('novoFilme', document.getElementById("nomeFilme").value);
-      location.href="../../html/informacaofilme.html";
-  }
-  static buscaFilmebarra(){
-      let model = new PesquisaModel();
-      model.fazRequest(localStorage.getItem('novoFilme'),() => {let view = new PesquisaView(); view.updatePesquisa(model)});
-  }
+    }
+
   static buscaFilmeImg(filme){
-      localStorage.setItem('novoFilme', filme);
+      localStorage.setItem('id', filme);
       location.href="../../html/informacaofilme.html";
   }
 
