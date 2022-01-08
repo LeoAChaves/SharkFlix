@@ -11,7 +11,6 @@ function requisicao() {
       if (result.Search == undefined) {
         $(".nadaEncontrado").removeClass("none");
       } else {
-        console.log(result);
         result.Search.forEach((filme) => {
           $.ajax({
             url:
@@ -24,9 +23,7 @@ function requisicao() {
               const plot = $("<p>").text("Sinopse: " + result.Plot);
               const genre = $("<p>").text("Genre: " + result.Genre);
               const runtime = $("<p>").text("Runtime: " + result.Runtime);
-              const rating = $("<p>").text(
-                "Rotten Tomatoes rating: " + result.Ratings[1].Value
-              );
+              const rating = $("<p>").text("IMDB rating: " + result.imdbRating);
               div.append(poster);
               div.append(titulo);
               div.append(p);
@@ -35,7 +32,6 @@ function requisicao() {
               div.append(runtime);
               div.append(rating);
               $(".resultado").append(div);
-              console.log(result);
             },
           });
         });

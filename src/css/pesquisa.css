@@ -30,26 +30,19 @@ main {
 }
 .resultado {
   margin: 50px 0;
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 .resultado div {
-  border: 1px black solid;
-  border-radius: 2px;
   padding: 5px;
   margin: 20px;
   width: 50%;
 }
 .resultado img {
   float: left;
-  height: 200px;
   margin-right: 30px;
-}
-.resultado h3,
-.resultado p {
-  font-size: smaller;
 }
 .none {
   display: none;
@@ -59,8 +52,26 @@ main {
   color: white;
   font-weight: bold;
 }
-@media (max-width: 400px) {
-  .barraDePesquisa span {
+@media (max-width: 1110px) {
+  .resultado img {
+    width: 200px;
+  }
+  .resultado p,
+  .resultado h3 {
+    font-size: large;
+  }
+}
+@media (max-width: 820px) {
+  .resultado img {
+    width: 150px;
+  }
+  .resultado p,
+  .resultado h3 {
+    font-size: small;
+  }
+}
+@media (max-width: 570px) {
+  .lupa {
     display: none;
   }
 }
