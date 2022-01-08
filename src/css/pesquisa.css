@@ -28,8 +28,11 @@ main {
   margin-top: 150px;
   width: 60%;
 }
+.apresentacao {
+  margin: 30px 0;
+  font-style: italic;
+}
 .resultado {
-  margin: 50px 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;

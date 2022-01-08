@@ -10,6 +10,7 @@ function requisicao() {
     success: function (result) {
       if (result.Search == undefined) {
         $(".nadaEncontrado").removeClass("none");
+        $(".apresentacao").addClass("none");
       } else {
         result.Search.forEach((filme) => {
           $.ajax({
@@ -36,10 +37,12 @@ function requisicao() {
           });
         });
         $(".nadaEncontrado").addClass("none");
+        $(".apresentacao").addClass("none");
       }
     },
     error: function () {
       $(".nadaEncontrado").removeClass("none");
+      $(".apresentacao").addClass("none");
     },
   });
 }
