@@ -3,7 +3,7 @@ $(".login").click((e) => {
   let mail = $("#email").val();
   let pass = $("#pass").val();
   let envio = $(".textorecupera");
-  if (mail != "") {
+  if (mail != "" && mail.indexOf('@')>0) {
     if (pass != "") {
       envio.html("Login efetuado com sucesso!");
       envio.css("color", "green");
