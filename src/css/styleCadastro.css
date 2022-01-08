@@ -1,6 +1,10 @@
 header {
   background-color: lavender;
 }
+main {
+  width: 100%;
+  background-image: linear-gradient(180deg, #9b9bfb, #590082);
+}
 .slogan {
   width: 50px;
   height: 50px;
@@ -9,7 +13,7 @@ header {
   z-index: initial;
 }
 .dados1 {
-  background-color: #bb6ae0;
+  /* background-color: #bb6ae0; */
   padding: 2em;
 }
 .planos {
