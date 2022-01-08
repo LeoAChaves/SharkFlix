@@ -1,122 +1,127 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    clear: none;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  clear: none;
 }
 body {
-    display: flex;
-    height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  flex-direction: column;
+  justify-content: space-between;
 }
-main{
-    margin-top: 100px;
+.slogan {
+  width: 50px;
+  height: 50px;
+}
+main {
+  margin-top: 100px;
 }
 
 .bloco-principal {
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 form {
-    width: 400px;
-    border: 3px solid #f1f1f1;
-    padding-bottom: 15px;
+  width: 400px;
+  border: 3px solid #f1f1f1;
+  padding-bottom: 15px;
 }
 
 .alinhar-centro {
-    display: flex;
+  display: flex;
 }
 
 input[type="email"],
 input[type="password"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    background: #f1f1f1;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  background: #f1f1f1;
 }
-.recup-senha{
-    text-align: center;
-    margin-top: 15px;
+.recup-senha {
+  text-align: center;
+  margin-top: 15px;
 }
 
 button {
-
-    background-color: #8F0BDB;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    transition: 1s;
+  background-color: #8f0bdb;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: 1s;
 }
 
 button:hover {
-    opacity: 0.8;
-
+  opacity: 0.8;
 }
 
 .cancelbtn {
-    width: auto;
-    padding: 10px 18px;
-    background-color: #1b1817;
+  width: auto;
+  padding: 10px 18px;
+  background-color: #1b1817;
 }
 
 .imgcontainer {
-    text-align: center;
-    margin-top: 15px;
-    
+  text-align: center;
+  margin-top: 15px;
 }
 
 .img {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 .botoes {
-    padding: 15px;
+  padding: 15px;
 }
 
 span.pass {
-    display: inline-block;
-    padding-top: 15px;
-    margin-left: 100px;
+  display: inline-block;
+  padding-top: 15px;
+  margin-left: 100px;
 }
 
 #footerPrincipal {
-    display: flex;
-    justify-content: center;
-    background-color: #590082;
-    color: white;
-    font-weight: bold;
-    margin-top: 50px;
-
+  display: flex;
+  justify-content: center;
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.textorecupera {
+  text-align: center;
 }
 
-.textorecupera{
-    text-align: center;
+.textorecupera {
+  text-align: center;
 }
 
+.textorecupera {
+  text-align: center;
+}
 
-/* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
-    span.pass {
-        display: block;
-        float: none;
-    }
-    .cancelbtn {
-        width: 100%;
-    }
+  span.pass {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
 }

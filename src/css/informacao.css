@@ -1,32 +1,59 @@
-body{
-    background-color: lavender;
+body {
+  background-color: lavender;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.cor-fundo{
-    background-color: lavender;
+.cor-fundo {
+  background-color: lavender;
 }
-.cor-logo{
-    color: #A10CF5 !important
+.cor-logo {
+  color: #a10cf5 !important;
 }
-header{
-    background-color: #9B9BFB;
+header {
+  background-color: #9b9bfb;
 }
-.cor-botao{
-    background-color:#8F0BDB ;
-    color: white;
+.logo {
+  width: 50px;
+  height: 50px;
 }
-.principal{
-    background-color: lavender;
+.cor-botao {
+  background-color: #8f0bdb;
+  color: white;
 }
-.none{
-    display: none;
+main {
+  display: flex;
+  justify-content: center;
 }
-
-#footerPrincipal{
-    background-color: #590082;
-    color: white;
-    font-weight: bold;
+.principal {
+  padding: 30px 0 70px 0;
+  background-color: lavender;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.titulo {
+  margin-bottom: 20px;
+}
+.centro {
+  text-align: center;
+}
+.none {
+  display: none;
+}
+#footerPrincipal {
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
+}
+.cor-botao:hover {
+  background-color: #590082;
+  color: white;
+}
+@media (max-width: 580px) {
+  .capa {
+    width: 90%;
   }
-  .cor-botao:hover{
-      background-color:  #590082;
-      color: white;
-  }
+}

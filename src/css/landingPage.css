@@ -1,98 +1,82 @@
-header{
-    background-color: #9B9BFB;
+header {
+  background-color: #9b9bfb;
+}
+main {
+  background-image: linear-gradient(180deg, #9b9bfb, #590082);
+}
+.slogan {
+  width: 50px;
+  height: 50px;
+}
+#footerPrincipal {
+  background-color: #590082;
+  color: white;
+  font-weight: bold;
 }
 
-main{
-    background-image: linear-gradient(180deg,#9B9BFB,#590082);
+.card {
+  width: 18rem;
 }
 
-#footerPrincipal{
-    background-color: #590082;
-    color: white;
-    font-weight: bold;
-  }
-
-.card{
-    width: 18rem;
+.alinharBotao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
 }
 
-.alinharBotao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-
+.botaoCSS {
+  text-decoration: none;
+  font-size: 100px;
+  padding: 5px 50px;
+  color: black;
+  transition: 1s;
 }
 
-.botaoCSS{
-    text-decoration: none;
-    font-size: 100px;
-    padding: 5px 50px;
-    color: black;
-    transition: 1s;
+.botaoCSS:hover {
+  color: white;
 }
 
-.botaoCSS:hover{
-    color: white;
-}
-
-
-.textAlign{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.textAlign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .neonText {
-    color: #fff;
-    text-shadow:
-        0 0 3px #fff,
-        0 0 5px #fff,
-        0 0 10px #fff,
-        0 0 21px #0fa,
-        0 0 41px #0fa,
-        0 0 46px #0fa,
-        0 0 51px #0fa,
-        0 0 76px #0fa;
-  }
-
-.btnSignUp{
-    background-color: #5800DB;
-    transition: 1s;
-    border: 1px solid black;
-    border-radius: 15px;
-    box-shadow: 10px 5px 5px black;;
+  color: #fff;
+  text-shadow: 0 0 3px #fff, 0 0 5px #fff, 0 0 10px #fff, 0 0 21px #0fa,
+    0 0 41px #0fa, 0 0 46px #0fa, 0 0 51px #0fa, 0 0 76px #0fa;
 }
 
-.btnSignUp:hover{
-    background-color: #19055C;
-    color: white;
+.btnSignUp {
+  background-color: #5800db;
+  transition: 1s;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 5px 5px black;
 }
 
-.bgColorGrid{
-    background-color: white;
+.btnSignUp:hover {
+  background-color: #19055c;
+  color: white;
 }
 
-.imgLanding{
-    width: 90px;
-    height: 90px;
+.bgColorGrid {
+  background-color: white;
 }
 
-.imgPlans{
-    width: 170px;
-    height: 170px;
+.imgLanding {
+  width: 90px;
+  height: 90px;
 }
 
-
-.imgLogo{
-    width: 300px;
-    height:300px ;
+.imgPlans {
+  width: 170px;
+  height: 170px;
 }
 
-.cardNew{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+.imgLogo {
+  width: 300px;
+  height: 300px;
 }
