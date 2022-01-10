@@ -1,9 +1,10 @@
+// Função destinada ao Login do usuário
 $(".login").click((e) => {
   e.preventDefault();
   let mail = $("#email").val();
   let pass = $("#pass").val();
   let envio = $(".textorecupera");
-  if (mail != "" && mail.indexOf('@')>0) {
+  if (mail != "" && mail.indexOf('@') > 0) {
     if (pass != "") {
       envio.html("Login efetuado com sucesso!");
       envio.css("color", "green");
