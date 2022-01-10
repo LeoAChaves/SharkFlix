@@ -1,9 +1,13 @@
+/* RESETE CSS */
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   clear: none;
 }
+
+/* CSS das paginas Login e recuperação de senha */
+
 body {
   display: flex;
   height: 100vh;

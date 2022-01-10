@@ -1,3 +1,4 @@
+// Função destinada à recuperação de Senha do usuário
 let listaMail = [];
 let listaPass = [];
 let listaRepass = [];
