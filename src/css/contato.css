@@ -35,10 +35,10 @@ section {
 #corLogo {
   color: black;
 }
-#corBotaoContato {
+.corBotaoContato {
   background-color: #8f0bdb;
 }
-#corBotaoContato:hover {
+.corBotaoContato:hover {
   background-color: #ba80db;
 }
 #footerPrincipal {
